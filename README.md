@@ -5,12 +5,6 @@
 
 `****` (provided by ['ADEPTLab'](https://tsinghua-adept.yuque.com/staff-mhp6ro/qgezu9/ubilx1)) is a brand new dataset based on 4D radar that can be used for studies on deep learning object detection and tracking in the field of autonomous driving. The system of ego vehicle includes a high-resolution camera, a 80-line LiDAR and two up-to-date and different models of 4D radars operating in different modes(Arbe and ARS548). The dataset comprises of raw data collected from ego vehicle, including scenarios such as tunnels and urban, with weather conditions rainy, cloudy and sunny. Our dataset also includes data from different time periods, including dusk, nighttime, and daytime. Our collected raw data amounts to a total of 12.5 hours, encompassing a total distance of over 600 kilometers. Our dataset covers a route distance of approximately 50 kilometers. It consists of 151 continuous time sequences, with the majority being 20-second sequences, resulting in a total of 10,007 carefully time-synchronized frames.
 
-
-<style>
-.table-noborder{
-  border: none;
-  padding: 0px;
-}
 </style>
 <table class="table-noborder">
   <tr>
@@ -34,11 +28,6 @@
 
 *  <b>Notice</b>: On the left is a color RGB image, while on the right side, the cyan represents the Arbe point cloud, the white represents the LiDAR point cloud, and the yellow represents the ARS548 point cloud.
 
-<style>
-.table-noborder{
-  border: none;
-  padding: 0px;
-}
 </style>
 <table class="table-noborder">
   <tr>
