@@ -348,7 +348,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>55.87</td>
         <td>51.55</td>
         <td>51.00</td>
-        <td><a herf="https://pan.baidu.com/s/17VYvS5iDfse770DR4ILUWQ?pwd=8888">link</a></td>
+        <td>['LINK'](https://pan.baidu.com/s/17VYvS5iDfse770DR4ILUWQ?pwd=8888)</td>
     </tr>
     <tr align=center>
         <td>camera+Arbe</td>
