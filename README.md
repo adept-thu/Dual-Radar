@@ -361,7 +361,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.20</td>
         <td>0.07</td>
         <td>0.08</td>
-        <td><a herf="https://pan.baidu.com/s/1eob5XHdQbaVStXL2BC26pA?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1eob5XHdQbaVStXL2BC26pA?pwd=8888</td>
     </tr>
     <tr align=center>
         <td>camera+ARS548</td>
@@ -374,7 +374,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
-        <td><a herf="https://pan.baidu.com/s/1W3O5OfmFLxcyYMSgZjKg7Q?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1W3O5OfmFLxcyYMSgZjKg7Q?pwd=8888</td>
     </tr>
     <tr align=center>
         <td rowspan="3">M2Fusion</td> 
@@ -388,7 +388,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>51.79</td>
         <td>46.79</td>
         <td>45.57</td>
-        <td><a herf="M2FUSION https://pan.baidu.com/s/1nRyibZj-3K8R_Q7Yq8nuxw?pwd=8888 lidar+arbe">link</a></td>
+        <td>https://pan.baidu.com/s/1nRyibZj-3K8R_Q7Yq8nuxw?pwd=8888</td>
     </tr>
     <tr align=center>
         <td>LiDAR+ARS548</td>
@@ -401,7 +401,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>42.42</td>
         <td>40.92</td>
         <td>39.98</td>
-        <td><a herf="https://pan.baidu.com/s/1F2qTt33XrvEionzI5WJHrw?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1F2qTt33XrvEionzI5WJHrw?pwd=8888</td>
     </tr>
 
 </table>
