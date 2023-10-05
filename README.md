@@ -780,7 +780,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>38.78</td>
         <td>38.74</td>
         <td>38.42</td>
-        <td><a herf="https://pan.baidu.com/s/1W-qI2s1nPcbQgWqzOCo-ww?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1W-qI2s1nPcbQgWqzOCo-ww?pwd=8888</td>
     </tr>
     <tr align=center>
         <td>Arbe</td>
@@ -793,7 +793,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.41</td>
         <td>0.24</td>
         <td>0.23</td>
-        <td><a herf="https://pan.baidu.com/s/1hFSzN5A4SWeJMEQHQ1nmWA?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1hFSzN5A4SWeJMEQHQ1nmWA?pwd=8888</td>
     </tr>
     <tr align=center>
         <td>ARS548</td>
@@ -806,7 +806,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>2.27</td>
         <td>1.64</td>
         <td>1.53</td>
-        <td><a herf="https://pan.baidu.com/s/1L6i4VP4tvfLXzTiTKv6klg?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1L6i4VP4tvfLXzTiTKv6klg?pwd=8888</td>
     </tr>
     <tr align=center>
         <td rowspan="3">RDIou</td> 
@@ -820,7 +820,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>49.33</td>
         <td>47.48</td>
         <td>46.85</td>
-        <td><a herf="https://pan.baidu.com/s/1dLE5AIS7LObDmD14sVRjNQ?pwd=8888">link</a></td> 
+        <td>https://pan.baidu.com/s/1dLE5AIS7LObDmD14sVRjNQ?pwd=8888</td> 
     </tr>
     <tr align=center>
         <td>Arbe</td>
@@ -833,7 +833,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.84</td>
         <td>0.66</td>
         <td>0.65</td>
-        <td><a herf="https://pan.baidu.com/s/1UYwhCQqUWTbdlWKN3ioBjg?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1UYwhCQqUWTbdlWKN3ioBjg?pwd=8888</td>
     </tr>
     <tr align=center>
         <td>ARS548</td>
@@ -846,7 +846,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.61</td>
         <td>0.46</td>
         <td>0.44</td>
-        <td><a herf="https://pan.baidu.com/s/1J5dI4lOPSNrHo6BWO3kwxw?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1J5dI4lOPSNrHo6BWO3kwxw?pwd=8888</td>
    </tr>
    <tr align=center>
         <td rowspan="3">VoxelRCNN</td> 
@@ -860,7 +860,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>47.47</td>
         <td>45.43</td>
         <td>43.85</td>
-        <td><a herf="https://pan.baidu.com/s/19xPzaxDaITnmcWRebokCQA?pwd=8888">link</a></td> 
+        <td>https://pan.baidu.com/s/19xPzaxDaITnmcWRebokCQA?pwd=8888</td> 
    </tr>
    <tr align=center>
         <td>Arbe</td>
@@ -873,7 +873,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.21</td>
         <td>0.15</td>
         <td>0.15</td>
-        <td><a herf="https://pan.baidu.com/s/1Y7ETKcL19XJgLkpit19DKQ?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1Y7ETKcL19XJgLkpit19DKQ?pwd=8888</td>
    </tr>
    <tr align=center>
         <td>ARS548</td>
@@ -886,7 +886,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.33</td>
         <td>0.30</td>
         <td>0.30</td>
-        <td><a herf="https://pan.baidu.com/s/1dhy0_LpzQpVkAI-hoDFbbQ?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1dhy0_LpzQpVkAI-hoDFbbQ?pwd=8888</td>
    </tr>
    <tr align=center>
         <td rowspan="3">Cas-V</td> 
@@ -900,7 +900,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>51.51</td>
         <td>50.03</td>
         <td>49.35</td>
-        <td><a herf="https://pan.baidu.com/s/1pBimu_gmWZUk9QLLYD7KTA?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1pBimu_gmWZUk9QLLYD7KTA?pwd=8888</td>
    </tr>
    <tr align=center>
         <td>Arbe</td>
@@ -913,7 +913,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.13</td>
         <td>0.05</td>
         <td>0.05</td>
-        <td><a herf="https://pan.baidu.com/s/1TtCPrz4DIeeMMOuHN9JhYg?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1TtCPrz4DIeeMMOuHN9JhYg?pwd=8888</td>
    </tr>
    <tr align=center>
         <td>ARS548</td>
@@ -926,7 +926,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.25</td>
         <td>0.21</td>
         <td>0.19</td>
-        <td><a herf="https://pan.baidu.com/s/1T4ryoltUeHsQj87YTl9I3g?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1T4ryoltUeHsQj87YTl9I3g?pwd=8888</td>
    </tr>
    <tr align=center>
         <td rowspan="3">Cas-T</td> 
@@ -940,7 +940,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>44.35</td>
         <td>44.41</td>
         <td>42.88</td>
-        <td><a herf="https://pan.baidu.com/s/1IAylSAjxN02Jv78VNvulMA?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1IAylSAjxN02Jv78VNvulMA?pwd=8888</td>
    </tr>
    <tr align=center>
         <td>Arbe</td>
@@ -953,7 +953,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.17</td>
         <td>0.08</td>
         <td>0.08</td>
-        <td><a herf="https://pan.baidu.com/s/1XuH30eIaKa_VQijiYBuGxg?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1XuH30eIaKa_VQijiYBuGxg?pwd=8888</td>
    </tr>
    <tr align=center>
         <td>ARS548</td>
@@ -966,7 +966,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.68</td>
         <td>0.43</td>
         <td>0.42</td>
-        <td><a herf="https://pan.baidu.com/s/1mQxorPnFHp_JMVmJBisRtA?pwd=8888">link</a></td>
+        <td>https://pan.baidu.com/s/1mQxorPnFHp_JMVmJBisRtA?pwd=8888</td>
    </tr>
 </table>
 <p align="center"><font face="Helvetica" size=3.><b>Table 6. Single modity Experimental Results(BEV@0.7 0.5 0.5)</b></font></p>
