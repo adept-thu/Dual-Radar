@@ -2,7 +2,7 @@
   <img src = "./imgs/logo1.png" width="60%">
 </p>
 
-`****` (provided by ['ADEPTLab'](https://tsinghua-adept.yuque.com/staff-mhp6ro/qgezu9/ubilx1)) is a brand new dataset based on 4D radar that can be used for studies on deep learning object detection and tracking in the field of autonomous driving. The system of ego vehicle includes a high-resolution camera, a 80-line LiDAR and two up-to-date and different models of 4D radars operating in different modes(Arbe and ARS548). The dataset comprises of raw data collected from ego vehicle, including scenarios such as tunnels and urban, with weather conditions rainy, cloudy and sunny. Our dataset also includes data from different time periods, including dusk, nighttime, and daytime. Our collected raw data amounts to a total of 12.5 hours, encompassing a total distance of over 600 kilometers. Our dataset covers a route distance of approximately 50 kilometers. It consists of 151 continuous time sequences, with the majority being 20-second sequences, resulting in a total of 10,007 carefully time-synchronized frames.
+`Dual Radar` (provided by ['ADEPTLab'](https://tsinghua-adept.yuque.com/staff-mhp6ro/qgezu9/ubilx1)) is a brand new dataset based on 4D radar that can be used for studies on deep learning object detection and tracking in the field of autonomous driving. The system of ego vehicle includes a high-resolution camera, a 80-line LiDAR and two up-to-date and different models of 4D radars operating in different modes(Arbe and ARS548). The dataset comprises of raw data collected from ego vehicle, including scenarios such as tunnels and urban, with weather conditions rainy, cloudy and sunny. Our dataset also includes data from different time periods, including dusk, nighttime, and daytime. Our collected raw data amounts to a total of 12.5 hours, encompassing a total distance of over 600 kilometers. Our dataset covers a route distance of approximately 50 kilometers. It consists of 151 continuous time sequences, with the majority being 20-second sequences, resulting in a total of 10,007 carefully time-synchronized frames.
 
 <table class="table-noborder">
   <tr>
@@ -64,9 +64,9 @@
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 2. Data Visualization</b></font></p>
 
-The URLs listed below are useful for using the `****` dataset and benchmark:
+The URLs listed below are useful for using the `Dual Radar` dataset and benchmark:
 
-* [paper](https://arxiv.org/abs/2206.08171) `****` paper and appendix [arxiv] </a>
+* [paper](https://arxiv.org/abs/2206.08171) `Dual Radar` paper and appendix [arxiv] </a>
 
 # Sensor Configuration 
 
@@ -238,7 +238,7 @@ Organize the dataset according to the following file structure
 1. Clone the repository
 
 ```
- git clone https://github.com/****/Radeptset-Radar.git
+ git clone https://github.com/Dual Radar/Radeptset-Radar.git
  cd Radeptsetdet
 ```
 
@@ -973,7 +973,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 </div>
 
 ## License
-The `****` dataset is published under the CC BY-NC-ND License, and all codes are published under the Apache License 2.0.
+The `Dual Radar` dataset is published under the CC BY-NC-ND License, and all codes are published under the Apache License 2.0.
 
 ## Acknowledgement
 
