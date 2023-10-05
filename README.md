@@ -183,8 +183,8 @@ We separately counted the number of instances for each category in the Dual-Rada
 <p align="center"><font face="Helvetica" size=3.><b>Figure 5. Distribution of instance conditions.</b></font></p>
 
 # Environment
-This is the documentation for how to use our detection frameworks with Dual-Radar-Radar dataset.
-We tested the Dual-Radar-Radar detection frameworks on the following environment:
+This is the documentation for how to use our detection frameworks with Dual-Radar dataset.
+We tested the Dual-Radar detection frameworks on the following environment:
 
 * Python 3.8.16 (3.10+ does not support open3d.)
 * Ubuntu 18.04/20.04
@@ -194,7 +194,7 @@ We tested the Dual-Radar-Radar detection frameworks on the following environment
 
 ## Notice
 
-[2022-09-30] The `Dual-Radar-Radar` dataset is made available via a network-attached storage (NAS) [download link](http://QuickConnect.to/kaistavelab).
+[2022-09-30] The `Dual-Radar` dataset is made available via a network-attached storage (NAS) [download link](http://QuickConnect.to/kaistavelab).
 
 ## Preparing the Dataset
 
@@ -238,7 +238,7 @@ Organize the dataset according to the following file structure
 1. Clone the repository
 
 ```
- git clone https://github.com/Dual-Radar/Dual-Radar-Radar.git
+ git clone https://github.com/Dual-Radar/Dual-Radar.git
  cd Dual-Radardet
 ```
 
