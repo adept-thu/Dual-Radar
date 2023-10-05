@@ -171,7 +171,7 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
 </div>
 
 # Data statistics
-We separately counted the number of instances for each category in the Radeptset dataset and the distribution of different types of weather.
+We separately counted the number of instances for each category in the Dual-Radar dataset and the distribution of different types of weather.
 <div align=center>
 <img src="./imgs/weather.png" width="500" height="320" />
 </div>
@@ -183,8 +183,8 @@ We separately counted the number of instances for each category in the Radeptset
 <p align="center"><font face="Helvetica" size=3.><b>Figure 5. Distribution of instance conditions.</b></font></p>
 
 # Environment
-This is the documentation for how to use our detection frameworks with Radeptset-Radar dataset.
-We tested the Radeptset-Radar detection frameworks on the following environment:
+This is the documentation for how to use our detection frameworks with Dual-Radar-Radar dataset.
+We tested the Dual-Radar-Radar detection frameworks on the following environment:
 
 * Python 3.8.16 (3.10+ does not support open3d.)
 * Ubuntu 18.04/20.04
@@ -194,7 +194,7 @@ We tested the Radeptset-Radar detection frameworks on the following environment:
 
 ## Notice
 
-[2022-09-30] The `Radeptset-Radar` dataset is made available via a network-attached storage (NAS) [download link](http://QuickConnect.to/kaistavelab).
+[2022-09-30] The `Dual-Radar-Radar` dataset is made available via a network-attached storage (NAS) [download link](http://QuickConnect.to/kaistavelab).
 
 ## Preparing the Dataset
 
@@ -212,7 +212,7 @@ Organize your code structure as follows
       ├── checkpoints
       ├── data
       ├── docs
-      ├── Radeptsetdet
+      ├── Dual-Radardet
       ├── output
 
 Organize the dataset according to the following file structure
@@ -238,14 +238,14 @@ Organize the dataset according to the following file structure
 1. Clone the repository
 
 ```
- git clone https://github.com/Dual-Radar/Radeptset-Radar.git
- cd Radeptsetdet
+ git clone https://github.com/Dual-Radar/Dual-Radar-Radar.git
+ cd Dual-Radardet
 ```
 
 2. Create a conda environment
 ```
-conda create -n Radeptsetdet python=3.8.16
-conda activate Radeptsetdet
+conda create -n Dual-Radardet python=3.8.16
+conda activate Dual-Radardet
 ```
 
 3. Install PyTorch (We recommend pytorch 1.10.1.)
@@ -258,7 +258,7 @@ pip install -r requirements.txt
 ```
 pip install spconv-cu113
 ```
-6. Build packages for Radeptsetdet
+6. Build packages for Dual-Radardet
 ```
 python setup.py develop
 ```
@@ -266,11 +266,11 @@ python setup.py develop
 ## Train & Evaluation
 * Generate the data infos by running the following command:
 ```
-python -m Radeptsetdet.datasets.Radeptset.Radeptset_dataset create_Radeptset_infos tools/cfgs/dataset_configs/Radeptset_dataset.yaml
+python -m Dual-Radardet.datasets.Dual-Radar.Dual-Radar_dataset create_Dual-Radar_infos tools/cfgs/dataset_configs/Dual-Radar_dataset.yaml
 # or you want to use arbe data
-python -m Radeptsetdet.datasets.Radeptset.Radeptset_dataset_arbe create_Radeptset_infos tools/cfgs/dataset_configs/Radeptset_dataset_arbe.yaml
+python -m Dual-Radardet.datasets.Dual-Radar.Dual-Radar_dataset_arbe create_Dual-Radar_infos tools/cfgs/dataset_configs/Dual-Radar_dataset_arbe.yaml
 # or ars548
-python -m Radeptsetdet.datasets.Radeptset.Radeptset_dataset_ars create_Radeptset_infos tools/cfgs/dataset_configs/Radeptset_dataset_ars.yaml
+python -m Dual-Radardet.datasets.Dual-Radar.Dual-Radar_dataset_ars create_Dual-Radar_infos tools/cfgs/dataset_configs/Dual-Radar_dataset_ars.yaml
 ```
 * To train the model on single GPU, prepare the total dataset and run
 ```
