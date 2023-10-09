@@ -177,10 +177,13 @@ We separately counted the number of instances for each category in the Dual-Rada
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 4. Distribution of weather conditions.</b></font></p>
 
+About two-thirds of our data were collected under normal weather conditions, and about one-third were collected under rainy and cloudy conditions. We collected 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
+
 <div align=center>
 <img src="./imgs/class.png"/>
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 5. Distribution of instance conditions.</b></font></p>
+We also conducted a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Fig. Most objects are within 60 meters of our ego vehicle. 
 
 # Environment
 This is the documentation for how to use our detection frameworks with Dual-Radar dataset.
