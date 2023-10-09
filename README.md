@@ -361,7 +361,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.20</td>
         <td>0.07</td>
         <td>0.08</td>
-        <td>[link](https://pan.baidu.com/s/1eob5XHdQbaVStXL2BC26pA?pwd=8888)</td>
+        <td>https://pan.baidu.com/s/1eob5XHdQbaVStXL2BC26pA?pwd=8888</td>
     </tr>
     <tr align=center>
         <td>camera+ARS548</td>
@@ -488,7 +488,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>53.06</td>
         <td>47.83</td>
         <td>46.32</td>
-        <td>https://pan.baidu.com/s/1nRyibZj-3K8R_Q7Yq8nuxw?pwd=8888 lidar+arbe</td>
+        <td>https://pan.baidu.com/s/1nRyibZj-3K8R_Q7Yq8nuxw?pwd=8888</td>
     </tr>
     <tr align=center>
         <td>LiDAR+ARS548</td>
