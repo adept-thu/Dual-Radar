@@ -361,7 +361,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>0.20</td>
         <td>0.07</td>
         <td>0.08</td>
-        <td>https://pan.baidu.com/s/1eob5XHdQbaVStXL2BC26pA?pwd=8888</td>
+        <td>[link](https://pan.baidu.com/s/1eob5XHdQbaVStXL2BC26pA?pwd=8888)</td>
     </tr>
     <tr align=center>
         <td>camera+ARS548</td>
