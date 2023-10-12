@@ -60,7 +60,7 @@
 
 
 <div align=left>
-<img src="./imgs/mutishow1.png"/>
+<img src="./imgs/show_final.png"/>
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 2. Data Visualization</b></font></p>
 
