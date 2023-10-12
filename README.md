@@ -1193,19 +1193,6 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 </table>
 </div>
 
-## Model Zoo
-
-| Model | Type | Link |
-| ------ | ------ | ------ |
-| 短文本 | 中等文本 | 稍微长一点的文本 |
-| 稍微长一点的文本 | 短文本 | 中等文本 |
-| 一个普通标题 | 一个普通标题 | 一个普通标题 |
-| ------ | ------ | ------ |
-| 短文本 | 中等文本 | 稍微长一点的文本 |
-| 稍微长一点的文本 | 短文本 | 中等文本 |
-| ------ | ------ | ------ |
-| 短文本 | 中等文本 | 稍微长一点的文本 |
-| 稍微长一点的文本 | 短文本 | 中等文本 |
 
 ## License
 The `Dual-Radar` dataset is published under the CC BY-NC-ND License, and all codes are published under the Apache License 2.0.
