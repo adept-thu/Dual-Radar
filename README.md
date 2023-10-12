@@ -241,7 +241,7 @@ Organize the dataset according to the following file structure
 1. Clone the repository
 
 ```
- git clone https://github.com/Dual-Radar/Dual-Radar.git
+ git clone https://github.com/adept-thu/Dual-Radar.git
  cd Dual-Radardet
 ```
 
