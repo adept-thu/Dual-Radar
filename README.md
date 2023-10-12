@@ -139,7 +139,7 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
 * The statistics of number of points cloud per frame
 
 <div align=center>
-<table border="10" >
+<table>
      <tr align=center>
         <td>Transducers</td>
         <td>Minimum Values</td>
