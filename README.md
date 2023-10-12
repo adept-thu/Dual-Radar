@@ -2,7 +2,7 @@
   <img src = "./imgs/logo1.png" width="60%">
 </p>
 
-`Dual-Radar` (provided by ['ADEPTLab'](https://tsinghua-adept.yuque.com/staff-mhp6ro/qgezu9/ubilx1)) is a brand new dataset based on 4D radar that can be used for studies on deep learning object detection and tracking in the field of autonomous driving. The system of ego vehicle includes a high-resolution camera, a 80-line LiDAR and two up-to-date and different models of 4D radars operating in different modes(Arbe and ARS548). The dataset comprises of raw data collected from ego vehicle, including scenarios such as tunnels and urban, with weather conditions rainy, cloudy and sunny. Our dataset also includes data from different time periods, including dusk, nighttime, and daytime. Our collected raw data amounts to a total of 12.5 hours, encompassing a total distance of over 600 kilometers. Our dataset covers a route distance of approximately 50 kilometers. It consists of 151 continuous time sequences, with the majority being 20-second sequences, resulting in a total of 10,007 carefully time-synchronized frames
+`Dual-Radar` (provided by ['ADEPTLab'](https://tsinghua-adept.yuque.com/staff-mhp6ro/qgezu9/ubilx1)) is a brand new dataset based on 4D radar that can be used for studies on deep learning object detection and tracking in the field of autonomous driving. The system of ego vehicle includes a high-resolution camera, a 80-line LiDAR and two up-to-date and different models of 4D radars operating in different modes(Arbe and ARS548). The dataset comprises of raw data collected from ego vehicle, including scenarios such as tunnels and urban, with weather conditions rainy, cloudy and sunny. Our dataset also includes data from different time periods, including dusk, nighttime, and daytime. Our collected raw data amounts to a total of 12.5 hours, encompassing a total distance of over 600 kilometers. Our dataset covers a route distance of approximately 50 kilometers. It consists of 151 continuous time sequences, with the majority being 20-second sequences, resulting in a total of 10,007 carefully time-synchronized frames.
 
 <table class="table-noborder">
   <tr>
@@ -200,11 +200,8 @@ We tested the Dual-Radar detection frameworks on the following environment:
 ## Preparing the Dataset
 
 * Via our server
-
-1. To download the dataset, log in to <a href="http://QuickConnect.to/kaistavelab"> our server </a> with the following credentials: 
-      ID       : your email
-      Password : your password
-2. After all files are downloaded, please arrange the workspace directory with the following structure:
+* 
+1. After all files are downloaded, please arrange the workspace directory with the following structure:
 
 
 Organize your code structure as follows
