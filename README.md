@@ -77,6 +77,7 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
 * The specification of the autonomous vehicle system platform
 
 <div align=center>
+<p align="center"><font face="Helvetica" size=3.><b>Table 1. The specification of the autonomous vehicle system platform</b></font></p>
 <table>
      <tr>
         <td rowspan="2" align=center>Dataset</td>
@@ -133,12 +134,12 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
         <td align=center>20</td>
      </tr>
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Table 1. The specification of the autonomous vehicle system platform</b></font></p>
 </div>
 
 * The statistics of number of points cloud per frame
 
 <div align=center>
+<p align="center"><font face="Helvetica" size=3.><b>Table 2. The statistics of number of points cloud per frame</b></font></p>
 <table>
      <tr align=center>
         <td>Transducers</td>
@@ -165,7 +166,6 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
         <td>800</td>
      </tr>
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Table 2. The statistics of number of points cloud per frame</b></font></p>
 </div>
 
 # Data statistics
