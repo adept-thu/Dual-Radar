@@ -1075,7 +1075,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>https://pan.baidu.com/s/1J5dI4lOPSNrHo6BWO3kwxw?pwd=8888</td>
    </tr>
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Table 6. Single modity Experimental Results(3D@0.5 0.25 0.25)</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 7. Single modity Experimental Results in the rainy scenario(3D@0.5 0.25 0.25)</b></font></p>
 </div>
 
 <div align=center>
@@ -1185,7 +1185,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>https://pan.baidu.com/s/1J5dI4lOPSNrHo6BWO3kwxw?pwd=8888</td>
    </tr>
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Table 7. Single modity Experimental Results(BEV@0.5 0.25 0.25)</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 8. Single modity Experimental Results(BEV@0.5 0.25 0.25) in the rainy scenario</b></font></p>
 </div>
 
 ## License
