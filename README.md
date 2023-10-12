@@ -8,13 +8,13 @@
   <tr>
     <td align="center">
       <figure>
-        <img src="./imgs/5.gif" alt="Image 1" width="500" height="200">
+        <img src="./imgs/5.gif" alt="Image 1" width="400" height="200">
       </figure>
       <p align="center"><font face="Helvetica" size=2.><b>a) First-person perspective observation</b></font></p>
     </td>
     <td align="center">
       <figure>
-        <img src="./imgs/7.gif" alt="Image 1" width="500" height="200">
+        <img src="./imgs/7.gif" alt="Image 1" width="400" height="200">
       </figure>
       <p align="center"><font face="Helvetica" size=2.><b>b) Third-person perspective observation</b></font></p>
     </td>
