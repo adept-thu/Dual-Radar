@@ -217,6 +217,10 @@ Organize the dataset according to the following file structure
 
     Dataset
       ├── ImageSets
+            ├── training.txt
+            ├── trainingval.txt
+            ├── val.txt
+            ├── testing.txt
       ├── training
             ├── arbe
             ├── ars548
