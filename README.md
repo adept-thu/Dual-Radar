@@ -195,7 +195,7 @@ We tested the Dual-Radar detection frameworks on the following environment:
 
 ## Notice
 
-[2022-09-30] The `Dual-Radar` dataset is made available via a network-attached storage (NAS) [download link](http://QuickConnect.to/kaistavelab).
+[2022-09-30] The dataset will provide a link for access to the data for further research as soon as possible.
 
 ## Preparing the Dataset
 
