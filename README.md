@@ -62,7 +62,7 @@
 
 
 <div align=left>
-<img src="./imgs/show_final.png"/>
+<img src="./imgs/show_finall.png"/>
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 2. Data Visualization</b></font></p>
 
@@ -309,6 +309,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 
 ## Experimental Results
 <div align=center>
+<p align="center"><font face="Helvetica" size=3.><b>Table 3. Multimodal Experimental Results(3D@0.5 0.25 0.25)</b></font></p>
 <table>
      <tr align=center>
         <td rowspan="3">Baseline</td> 
@@ -403,12 +404,12 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
 
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Table 3. Multimodal Experimental Results(3D@0.5 0.25 0.25)</b></font></p>
 </div>
 </div>
 
 
 <div align=center>
+<p align="center"><font face="Helvetica" size=3.><b>Table 4. Multimodal Experimental Results(BEV@0.5 0.25 0.25)</b></font></p>
 <table>
      <tr align=center>
         <td rowspan="3">Baseline</td> 
@@ -503,7 +504,6 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
 
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Table 4. Multimodal Experimental Results(BEV@0.5 0.25 0.25)</b></font></p>
 </div>
 
 
