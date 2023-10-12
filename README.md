@@ -970,6 +970,116 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 <p align="center"><font face="Helvetica" size=3.><b>Table 6. Single modity Experimental Results(BEV@0.5 0.25 0.25)</b></font></p>
 </div>
 
+<div align=center>
+<table>
+     <tr align=center>
+        <td rowspan="3">Baseline</td> 
+        <td rowspan="3" align=center>Data</td> 
+        <td colspan="3" align=center>Car</td>
+        <td colspan="3" align=center>Pedestrain</td>
+        <td colspan="3" align=center>Cyclist</td>
+        <td rowspan="3" align=center>model pth</td>
+    </tr>
+    <tr>
+        <td colspan="3" align=center>3D@0.5</td>
+        <td colspan="3" align=center>3D@0.25</td>
+        <td colspan="3" align=center>3D@0.25</td>
+    </tr>
+    <tr align=center>
+        <td>Easy</td>
+        <td>Mod.</td>
+        <td>Hard</td>
+        <td>Easy</td>
+        <td>Mod.</td>
+        <td>Hard</td>
+        <td>Easy</td>
+        <td>Mod.</td>
+        <td>Hard</td>
+    </tr>
+    <tr align=center>
+        <td rowspan="3">pointpillars</td> 
+        <td>LiDAR</td>
+        <td>60.57</td>
+        <td>44.31</td>
+        <td>41.91</td>
+        <td>32.74</td>
+        <td>28.82</td>
+        <td>28.67</td>
+        <td>29.12</td>
+        <td>25.75</td>
+        <td>24.24</td>
+        <td>https://pan.baidu.com/s/1W-qI2s1nPcbQgWqzOCo-ww?pwd=8888</td>
+    </tr>
+    <tr align=center>
+        <td>Arbe</td>
+        <td>68.24</td>
+        <td>48.98</td>
+        <td>42.80</td>
+        <td>0.00</td>
+        <td>0.00</td>
+        <td>0.00</td>
+        <td>0.19</td>
+        <td>0.10</td>
+        <td>0.09</td>
+        <td>https://pan.baidu.com/s/1hFSzN5A4SWeJMEQHQ1nmWA?pwd=8888</td>
+    </tr>
+    <tr align=center>
+        <td>ARS548</td>
+        <td>11.87</td>
+        <td>8.41</td>
+        <td>7.32</td>
+        <td>0.11</td>
+        <td>0.09</td>
+        <td>0.08</td>
+        <td>0.93</td>
+        <td>0.36</td>
+        <td>0.30</td>
+        <td>https://pan.baidu.com/s/1L6i4VP4tvfLXzTiTKv6klg?pwd=8888</td>
+    </tr>
+    <tr align=center>
+        <td rowspan="3">RDIou</td> 
+        <td>LiDAR</td>
+        <td>44.93</td>
+        <td>39.32</td>
+        <td>39.09</td>
+        <td>24.28</td>
+        <td>21.63</td>
+        <td>21.43</td>
+        <td>52.64</td>
+        <td>43.92</td>
+        <td>42.04</td>
+        <td>https://pan.baidu.com/s/1dLE5AIS7LObDmD14sVRjNQ?pwd=8888</td>
+    </tr>
+    <tr align=center>
+        <td>Arbe</td>
+        <td>67.81</td>
+        <td>49.59</td>
+        <td>43.24</td>
+        <td>0.00</td>
+        <td>0.00</td>
+        <td>0.00</td>
+        <td>0.38</td>
+        <td>0.30</td>
+        <td>0.28</td>
+        <td>https://pan.baidu.com/s/1UYwhCQqUWTbdlWKN3ioBjg?pwd=8888</td>
+    </tr>
+    <tr align=center>
+        <td>ARS548</td>
+        <td>5.87</td>
+        <td>5.48</td>
+        <td>4.68</td>
+        <td>0.00</td>
+        <td>0.00</td>
+        <td>0.00</td>
+        <td>0.09</td>
+        <td>0.01</td>
+        <td>0.01</td>
+        <td>https://pan.baidu.com/s/1J5dI4lOPSNrHo6BWO3kwxw?pwd=8888</td>
+   </tr>
+</table>
+<p align="center"><font face="Helvetica" size=3.><b>Table 5. Single modity Experimental Results(3D@0.5 0.25 0.25)</b></font></p>
+</div>
+
 ## License
 The `Dual-Radar` dataset is published under the CC BY-NC-ND License, and all codes are published under the Apache License 2.0.
 
