@@ -634,9 +634,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>55.47</td>
         <td>30.17</td>
         <td>19.82</td>
-        <td>0.00</td>
-        <td>0.00</td>
-        <td>0.00</td>
+        <td>0.03</td>
+        <td>0.02</td>
+        <td>0.02</td>
         <td>0.15</td>
         <td>0.06</td>
         <td>0.06</td>
@@ -674,9 +674,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>27.96</td>
         <td>10.27</td>
         <td>6.21</td>
-        <td>0.00</td>
-        <td>0.00</td>
-        <td>0.00</td>
+        <td>0.02</td>
+        <td>0.01</td>
+        <td>0.01</td>
         <td>0.05</td>
         <td>0.04</td>
         <td>0.04</td>
