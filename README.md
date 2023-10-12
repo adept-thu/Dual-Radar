@@ -77,7 +77,7 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
 * The specification of the autonomous vehicle system platform
 
 <div align=center>
-<table border="10" >
+<table>
      <tr>
         <td rowspan="2" align=center>Dataset</td>
         <td colspan="3" align=center>Resolution</td>
