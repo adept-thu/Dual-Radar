@@ -322,9 +322,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td rowspan="3" align=center>model pth</td>
     </tr>
     <tr align=center>
-        <td colspan="3" align=center>3D@0.7</td>
-        <td colspan="3" align=center>3D@0.7</td>
-        <td colspan="3" align=center>3D@0.7</td>
+        <td colspan="3" align=center>3D@0.5</td>
+        <td colspan="3" align=center>3D@0.25</td>
+        <td colspan="3" align=center>3D@0.25</td>
     </tr>
     <tr align=center>
         <td>Easy</td>
@@ -380,15 +380,15 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     <tr align=center>
         <td rowspan="3">M2Fusion</td> 
         <td>LiDAR+Arbe</td>
-        <td>67.37</td>
-        <td>46.50</td>
-        <td>33.17</td>
-        <td>12.90</td>
-        <td>8.45</td>
-        <td>8.36</td>
-        <td>51.79</td>
-        <td>46.79</td>
-        <td>45.57</td>
+        <td>89.71</td>
+        <td>79.70</td>
+        <td>64.32</td>
+        <td>27.79</td>
+        <td>20.41</td>
+        <td>19.58</td>
+        <td>41.85</td>
+        <td>36.20</td>
+        <td>35.14</td>
         <td>https://pan.baidu.com/s/1nRyibZj-3K8R_Q7Yq8nuxw?pwd=8888</td>
     </tr>
     <tr align=center>
