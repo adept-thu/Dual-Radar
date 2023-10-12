@@ -351,7 +351,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>55.87</td>
         <td>51.55</td>
         <td>51.00</td>
-        <td><ul><a href="https://pan.baidu.com/s/1eob5XHdQbaVStXL2BC26pA?pwd=8888">PointNet (CVPR'2017)</a></ul></td>
+        <td><ul><a href="https://pan.baidu.com/s/17VYvS5iDfse770DR4ILUWQ?pwd=8888">model</a></ul></td>
     </tr>
     <tr align=center>
         <td>camera+Arbe</td>
