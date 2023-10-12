@@ -66,8 +66,6 @@
 
 The URLs listed below are useful for using the `Dual-Radar` dataset and benchmark:
 
-* [paper](https://arxiv.org/abs/2206.08171) `Dual-Radar` paper and appendix [arxiv] </a>
-
 # Sensor Configuration 
 
 <div align=center>
