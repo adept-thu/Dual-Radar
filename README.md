@@ -393,12 +393,12 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
     <tr align=center>
         <td>LiDAR+ARS548</td>
-        <td>69.56</td>
-        <td>49.13</td>
-        <td>35.43</td>
-        <td>12.69</td>
-        <td>9.80</td>
-        <td>9.67</td>
+        <td>89.91</td>
+        <td>78.17</td>
+        <td>62.37</td>
+        <td>34.28</td>
+        <td>29.89</td>
+        <td>29.17</td>
         <td>42.42</td>
         <td>40.92</td>
         <td>39.98</td>
@@ -406,7 +406,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
 
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Table 3. Multimodal Experimental Results(3D@0.7 0.5 0.5)</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 3. Multimodal Experimental Results(3D@0.5 0.25 0.25)</b></font></p>
 </div>
 </div>
 
@@ -480,12 +480,12 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     <tr align=center>
         <td rowspan="3">M2Fusion</td> 
         <td>LiDAR+Arbe</td>
-        <td>81.36</td>
-        <td>70.31</td>
-        <td>54.09</td>
-        <td>17.45</td>
-        <td>12.67</td>
-        <td>12.59</td>
+        <td>90.91</td>
+        <td>85.73</td>
+        <td>70.16</td>
+        <td>28.05</td>
+        <td>20.68</td>
+        <td>20.47</td>
         <td>53.06</td>
         <td>47.83</td>
         <td>46.32</td>
@@ -493,12 +493,12 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
     <tr align=center>
         <td>LiDAR+ARS548</td>
-        <td>86.88</td>
-        <td>74.75</td>
-        <td>57.52</td>
-        <td>21.50</td>
-        <td>18.18</td>
-        <td>18.00</td>
+        <td>91.14</td>
+        <td>82.57</td>
+        <td>66.65</td>
+        <td>34.98</td>
+        <td>30.28</td>
+        <td>29.92</td>
         <td>43.12</td>
         <td>41.57</td>
         <td>40.29</td>
@@ -506,7 +506,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
 
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Table 4. Multimodal Experimental Results(BEV@0.7 0.5 0.5)</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 4. Multimodal Experimental Results(BEV@0.5 0.25 0.25)</b></font></p>
 </div>
 
 
