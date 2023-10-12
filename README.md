@@ -71,7 +71,7 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
 # Sensor Configuration 
 
 <div align=center>
-<img src="./imgs/ego_config.png"  width="500" height="300"/>
+<img src="./imgs/ego_config_final.png"  width="500" height="300"/>
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 3. Sensor Configuration and Coordinate Systems</b></font></p>
 
@@ -180,7 +180,7 @@ We separately counted the number of instances for each category in the Dual-Rada
 About two-thirds of our data were collected under normal weather conditions, and about one-third were collected under rainy and cloudy conditions. We collected 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
 
 <div align=center>
-<img src="./imgs/class.png"/>
+<img src="./imgs/class_show.png"/>
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 5. Distribution of instance conditions.</b></font></p>
 We also conducted a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Fig. Most objects are within 60 meters of our ego vehicle. 
