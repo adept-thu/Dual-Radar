@@ -199,8 +199,6 @@ We tested the Dual-Radar detection frameworks on the following environment:
 
 ## Preparing the Dataset
 
-* Via our server
-* 
 1. After all files are downloaded, please arrange the workspace directory with the following structure:
 
 
