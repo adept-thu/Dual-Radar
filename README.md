@@ -240,7 +240,7 @@ Organize the dataset according to the following file structure
 
 ```
  git clone https://github.com/adept-thu/Dual-Radar.git
- cd Dual-Radardet
+ cd Dual-Radar
 ```
 
 2. Create a conda environment
