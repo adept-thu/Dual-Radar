@@ -419,9 +419,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td rowspan="3" align=center>model pth</td>
     </tr>
     <tr align=center>
-        <td colspan="3" align=center>BEV@0.7</td>
-        <td colspan="3" align=center>BEV@0.7</td>
-        <td colspan="3" align=center>BEV@0.7</td>
+        <td colspan="3" align=center>BEV@0.5</td>
+        <td colspan="3" align=center>BEV@0.25</td>
+        <td colspan="3" align=center>BEV@0.25</td>
     </tr>
     <tr align=center>
         <td>Easy</td>
@@ -520,9 +520,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td rowspan="3" align=center>model pth</td>
     </tr>
     <tr>
-        <td colspan="3" align=center>3D@0.7</td>
-        <td colspan="3" align=center>3D@0.7</td>
-        <td colspan="3" align=center>3D@0.7</td>
+        <td colspan="3" align=center>3D@0.5</td>
+        <td colspan="3" align=center>3D@0.25</td>
+        <td colspan="3" align=center>3D@0.25</td>
     </tr>
     <tr align=center>
         <td>Easy</td>
@@ -538,12 +538,12 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     <tr align=center>
         <td rowspan="3">pointpillars</td> 
         <td>LiDAR</td>
-        <td>77.93</td>
-        <td>50.14</td>
-        <td>36.36</td>
-        <td>25.31</td>
-        <td>22.34</td>
-        <td>22.01</td>
+        <td>81.78</td>
+        <td>55.40</td>
+        <td>44.53</td>
+        <td>43.22</td>
+        <td>38.87</td>
+        <td>38.45</td>
         <td>25.60</td>
         <td>24.35</td>
         <td>23.97</td>
@@ -551,9 +551,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
     <tr align=center>
         <td>Arbe</td>
-        <td>11.28</td>
-        <td>4.60</td>
-        <td>2.75</td>
+        <td>49.06</td>
+        <td>27.64</td>
+        <td>18.63</td>
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
@@ -564,9 +564,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
     <tr align=center>
         <td>ARS548</td>
-        <td>10.64</td>
-        <td>9.09</td>
-        <td>9.09</td>
+        <td>11.94</td>
+        <td>6.12</td>
+        <td>3.76</td>
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
@@ -578,12 +578,12 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     <tr align=center>
         <td rowspan="3">RDIou</td> 
         <td>LiDAR</td>
-        <td>62.33</td>
-        <td>37.56</td>
-        <td>27.43</td>
-        <td>20.40</td>
-        <td>17.47</td>
-        <td>17.03</td>
+        <td>63.43</td>
+        <td>40.80</td>
+        <td>32.92</td>
+        <td>33.71</td>
+        <td>29.35</td>
+        <td>28.96</td>
         <td>38.26</td>
         <td>35.62</td>
         <td>35.02</td>
@@ -591,9 +591,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
     <tr align=center>
         <td>Arbe</td>
-        <td>18.46</td>
-        <td>7.96</td>
-        <td>4.86</td>
+        <td>51.49</td>
+        <td>26.74</td>
+        <td>17.83</td>
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
@@ -604,9 +604,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
     <tr align=center>
         <td>ARS548</td>
-        <td>1.35</td>
-        <td>0.57</td>
-        <td>0.29</td>
+        <td>5.96</td>
+        <td>3.77</td>
+        <td>2.29</td>
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
@@ -618,12 +618,12 @@ python demo.py --cfg_file ${CONFIG_FILE} \
    <tr align=center>
         <td rowspan="3">VoxelRCNN</td> 
         <td>LiDAR</td>
-        <td>84.19</td>
-        <td>54.19</td>
-        <td>38.53</td>
-        <td>36.66</td>
-        <td>32.08</td>
-        <td>31.66</td>
+        <td>86.41</td>
+        <td>56.91</td>
+        <td>42.38</td>
+        <td>52.65</td>
+        <td>46.33</td>
+        <td>45.80</td>
         <td>38.89</td>
         <td>35.13</td>
         <td>34.52</td>
@@ -631,9 +631,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
    </tr>
    <tr align=center>
         <td>Arbe</td>
-        <td>20.49</td>
-        <td>9.06</td>
-        <td>5.75</td>
+        <td>55.47</td>
+        <td>30.17</td>
+        <td>19.82</td>
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
@@ -644,9 +644,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
    </tr>
    <tr align=center>
         <td>ARS548</td>
-        <td>4.04</td>
-        <td>1.54</td>
-        <td>0.76</td>
+        <td>18.37</td>
+        <td>8.24</td>
+        <td>4.97</td>
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
@@ -658,12 +658,12 @@ python demo.py --cfg_file ${CONFIG_FILE} \
    <tr align=center>
         <td rowspan="3">Cas-V</td> 
         <td>LiDAR</td>
-        <td>78.15</td>
-        <td>54.16</td>
-        <td>41.58</td>
-        <td>38.22</td>
-        <td>33.78</td>
-        <td>33.33</td>
+        <td>80.60</td>
+        <td>58.98</td>
+        <td>49.83</td>
+        <td>55.43</td>
+        <td>49.11</td>
+        <td>48.47</td>
         <td>42.84</td>
         <td>40.32</td>
         <td>39.09</td>
@@ -671,9 +671,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
    </tr>
    <tr align=center>
         <td>Arbe</td>
-        <td>6.66</td>
-        <td>2.00</td>
-        <td>1.05</td>
+        <td>27.96</td>
+        <td>10.27</td>
+        <td>6.21</td>
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
@@ -684,9 +684,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
    </tr>
    <tr align=center>
         <td>ARS548</td>
-        <td>1.61</td>
-        <td>0.49</td>
-        <td>0.19</td>
+        <td>7.71</td>
+        <td>3.05</td>
+        <td>1.86</td>
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
@@ -698,12 +698,12 @@ python demo.py --cfg_file ${CONFIG_FILE} \
    <tr align=center>
         <td rowspan="3">Cas-T</td> 
         <td>LiDAR</td>
-        <td>72.46</td>
-        <td>42.62</td>
-        <td>30.77</td>
-        <td>40.61</td>
-        <td>34.87</td>
-        <td>34.45</td>
+        <td>73.41</td>
+        <td>45.74</td>
+        <td>35.09</td>
+        <td>58.84</td>
+        <td>52.08</td>
+        <td>51.45</td>
         <td>35.42</td>
         <td>33.78</td>
         <td>33.36</td>
@@ -711,9 +711,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
    </tr>
    <tr align=center>
         <td>Arbe</td>
-        <td>0.59</td>
-        <td>0.17</td>
-        <td>0.11</td>
+        <td>14.15</td>
+        <td>6.38</td>
+        <td>4.27</td>
         <td>0.00</td>
         <td>0.00</td>
         <td>0.00</td>
