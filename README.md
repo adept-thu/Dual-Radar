@@ -410,7 +410,6 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>39.98</td>
         <td></td><a href="https://pan.baidu.com/s/1F2qTt33XrvEionzI5WJHrw?pwd=8888">model</a></td>
     </tr>
-
 </table>
 </div>
 </div>
