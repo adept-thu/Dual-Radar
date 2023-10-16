@@ -80,7 +80,7 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
 
 <div align=center>
 <p align="center"><font face="Helvetica" size=3.><b>Table 1. The specification of the autonomous vehicle system platform</b></font></p>
-<table border="10" >
+<table>
      <tr>
         <td rowspan="2" align=center>Sensors</td>
         <td rowspan="2" align=center>Type</td>
