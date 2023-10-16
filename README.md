@@ -24,7 +24,7 @@
 <p align="center"><font face="Helvetica" size=3.><b>Figure 1. Up to a visual range of 80 meters in urban</b></font></p>
 </div>
 
-# Radar Dataset
+# Dual-Radar Dataset
 
 *  <b>Notice</b>: On the left is a color RGB image, while on the right side, the cyan represents the Arbe point cloud, the white represents the LiDAR point cloud, and the yellow represents the ARS548 point cloud.
 
