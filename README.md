@@ -80,9 +80,10 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
 
 <div align=center>
 <p align="center"><font face="Helvetica" size=3.><b>Table 1. The specification of the autonomous vehicle system platform</b></font></p>
-<table>
+<table border="10" >
      <tr>
-        <td rowspan="2" align=center>Dataset</td>
+        <td rowspan="2" align=center>Sensors</td>
+        <td rowspan="2" align=center>Type</td>
         <td colspan="3" align=center>Resolution</td>
         <td colspan="3" align=center>Fov</td>
         <td rowspan="2">FPS</td>
@@ -97,6 +98,7 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
      </tr>
       <tr>
         <td align=center>camera</td>
+        <td align=center>acA1920-40uc</td>
         <td align=center>-</td>
         <td align=center>1920X</td>
         <td align=center>1200X</td>
@@ -107,6 +109,7 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
      </tr>
      <tr>
         <td align=center>LiDAR</td>
+        <td align=center>RS-Ruby Lite</td>
         <td align=center>0.05m</td>
         <td align=center>0.2°</td>
         <td align=center>0.2°</td>
@@ -116,21 +119,22 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
         <td align=center>10</td>
      </tr>
      <tr>
-        <td align=center>ARS548 RDI</td>
+        <td rowspan="2" align=center>4D radar</td>
+        <td align=center>ARS 548RDI</td>
         <td align=center>0.22m</td>
-        <td align=center>0.1°</td>
-        <td align=center>0.1°</td>
+        <td align=center>1.2°@0...±15°<br>1.68°@±45°</td>
+        <td align=center>2.3°</td>
         <td align=center>300m</td>
         <td align=center>±60°</td>
-        <td align=center>±4°</td>
+        <td align=center>±4°@300m<br>±14°@<140m</td>
         <td align=center>20</td>
      </tr>
      <tr>
         <td align=center>Arbe Phoenix</td>
-        <td align=center>0.07m</td>
-        <td align=center>1°</td>
+        <td align=center>0.3m</td>
+        <td align=center>1.25°</td>
         <td align=center>2°</td>
-        <td align=center>300m</td>
+        <td align=center>153.6m</td>
         <td align=center>100°</td>
         <td align=center>30°</td>
         <td align=center>20</td>
