@@ -408,7 +408,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>42.42</td>
         <td>40.92</td>
         <td>39.98</td>
-        <td></td><a href="https://pan.baidu.com/s/1F2qTt33XrvEionzI5WJHrw?pwd=8888">model</a></td>
+        <td><a href="https://pan.baidu.com/s/1F2qTt33XrvEionzI5WJHrw?pwd=8888">model</a></td>
     </tr>
 </table>
 </div>
