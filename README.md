@@ -412,7 +412,6 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     </tr>
 </table>
 </div>
-</div>
 
 
 <div align=center>
