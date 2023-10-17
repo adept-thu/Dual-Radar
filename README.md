@@ -1209,11 +1209,11 @@ The `Dual-Radar` dataset is published under the CC BY-NC-ND License, and all cod
 ## Citation
 If you find this work is useful for your research, please consider citing:
 
-=======
+```
 @article{zhang2023dual,
   title={Dual Radar: A Multi-modal Dataset with Dual 4D Radar for Autononous Driving},
   author={Zhang, Xinyu and Wang, Li and Chen, Jian and Fang, Cheng and Yang, Lei and Song, Ziying and Yang, Guangqi and Wang, Yichen and Zhang, Xiaofei and Li, Jun},
   journal={arXiv preprint arXiv:2310.07602},
   year={2023}
 }
-=======
+```
