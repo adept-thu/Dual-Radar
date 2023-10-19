@@ -219,7 +219,7 @@ Organize your code structure as follows
       ├── checkpoints
       ├── data
       ├── docs
-      ├── Dual-Radardet
+      ├── pcdet
       ├── output
 
 Organize the dataset according to the following file structure
