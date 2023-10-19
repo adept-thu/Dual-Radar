@@ -181,6 +181,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
      </tr>
 </table>
 </div>
+  In addition,we analyzed the distribution density of the point clouds and the number of point clouds per frame, as shown in Table V
 
 # Data statistics
 We separately counted the number of instances for each category in the Dual-Radar dataset and the distribution of different types of weather.
