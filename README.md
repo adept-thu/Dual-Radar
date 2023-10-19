@@ -6,7 +6,7 @@
 <strong>Our code and data are still being maintained and will be released soon.</strong>
 
 
-`Dual-Radar` (provided by ADEPTLab) is a brand new dataset based on 4D radar that can be used for studies on deep learning object detection and tracking in the field of autonomous driving. The system of ego vehicle includes a high-resolution camera, a 80-line LiDAR and two up-to-date and different models of 4D radars operating in different modes(Arbe and ARS548). The dataset comprises of raw data collected from ego vehicle, including scenarios such as tunnels and urban, with weather conditions rainy, cloudy and sunny. Our dataset also includes data from different time periods, including dusk, nighttime, and daytime. Our collected raw data amounts to a total of 12.5 hours, encompassing a total distance of over 600 kilometers. Our dataset covers a route distance of approximately 50 kilometers. It consists of 151 continuous time sequences, with the majority being 20-second sequences, resulting in a total of 10,007 carefully time-synchronized frames.
+`Dual-Radar` is a brand new dataset based on 4D radar that can be used for studies on deep learning object detection and tracking in the field of autonomous driving. The system of ego vehicle includes a high-resolution camera, a 80-line LiDAR and two up-to-date and different models of 4D radars operating in different modes(Arbe and ARS548). The dataset comprises of raw data collected from ego vehicle, including scenarios such as tunnels and urban, with weather conditions rainy, cloudy and sunny. Our dataset also includes data from different time periods, including dusk, nighttime, and daytime. Our collected raw data amounts to a total of 12.5 hours, encompassing a total distance of over 600 kilometers. Our dataset covers a route distance of approximately 50 kilometers. It consists of 151 continuous time sequences, with the majority being 20-second sequences, resulting in a total of 10,007 carefully time-synchronized frames.
 
 
 <div align=center>
@@ -16,13 +16,13 @@
       <figure>
         <img src="./imgs/5.gif" alt="Image 1" width="350" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>a) First-person perspective observation</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>a) Data projection visualization</b></font></p>
     </td>
     <td align="center">
       <figure>
         <img src="./imgs/7.gif" alt="Image 1" width="350" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>b) Third-person perspective observation</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>b) Data collection vehicle operation</b></font></p>
     </td>
   </tr>
 </table>
@@ -39,13 +39,13 @@
       <figure>
         <img src="./imgs/1.gif" alt="Image 1" width="500" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>a) sunny,daytime,up to a distance of 80 meters</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>a) sunny,daytime</b></font></p>
     </td>
     <td align="center">
       <figure>
         <img src="./imgs/2.gif" alt="Image 1" width="500" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>b) sunny,nightime,up to a distance of 80 meters</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>b) sunny,nightime</b></font></p>
     </td>
   </tr>
   <tr>
@@ -53,13 +53,13 @@
       <figure>
         <img src="./imgs/3.gif" alt="Image 1" width="500" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>c) rainy,daytime,up to a distance of 80 meters</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>c) rainy,daytime</b></font></p>
     </td>
     <td align="center">
       <figure>
         <img src="./imgs/4.gif" alt="Image 1" width="500" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>d) cloudy,daytime,up to a distance of 80 meters</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>d) cloudy,daytime</b></font></p>
     </td>
   </tr>
 </table>
