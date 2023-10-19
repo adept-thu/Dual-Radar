@@ -22,7 +22,7 @@
       <figure>
         <img src="./imgs/7.gif" alt="Image 1" width="350" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>b) Data collection vehicle operation</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>b) Data collection vehicle work scenario</b></font></p>
     </td>
   </tr>
 </table>
