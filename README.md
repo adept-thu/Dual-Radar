@@ -26,7 +26,6 @@
     </td>
   </tr>
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 1. Up to a visual range of 80 meters in urban</b></font></p>
 </div>
 
 # Dual-Radar Dataset
@@ -63,7 +62,7 @@
     </td>
   </tr>
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 1. Up to a visual range of 80 meters in urban</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 1. Visualization of raw data under different weather conditions</b></font></p>
 
 
 <div align=left>
