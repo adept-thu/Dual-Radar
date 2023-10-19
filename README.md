@@ -148,7 +148,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 </table>
 </div>
 
-  Our proposed dataset is collected from a high-resolution camera, an 80-line mechanical LiDAR, and two types of 4D radars, the Arbe Phoenix and the ARS548 RDI radar. Our dataset provides GPS information for timing implementation. The sensor configurations are shown in Table I.
+  Our proposed dataset is collected from a high-resolution camera, an 80-line mechanical LiDAR, and two types of 4D radars, the Arbe Phoenix and the ARS548 RDI radar. Our dataset provides GPS information for timing implementation. The sensor configurations are shown in Table 1.
 
 * The statistics of number of points cloud per frame
 
@@ -181,7 +181,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
      </tr>
 </table>
 </div>
-  In addition,we analyzed the distribution density of the point clouds and the number of point clouds per frame, as shown in Table V
+  In addition,we analyzed the distribution density of the point clouds and the number of point clouds per frame, as shown in Table 2.
 
 # Data statistics
 We separately counted the number of instances for each category in the Dual-Radar dataset and the distribution of different types of weather.
