@@ -20,7 +20,7 @@
     </td>
     <td align="center">
       <figure>
-        <img src="./imgs/7.gif" alt="Image 1" width="350" height="200">
+        <img src="./imgs/6.gif" alt="Image 1" width="350" height="200">
       </figure>
       <p align="center"><font face="Helvetica" size=2.><b>b) Ego vehicle's work scenario</b></font></p>
     </td>
