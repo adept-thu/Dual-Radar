@@ -31,7 +31,7 @@
 # Dual-Radar Dataset
 
 *  <b>Notice</b>: On the left is a color RGB image, while on the right side, the cyan represents the Arbe point cloud, the white represents the LiDAR point cloud, and the yellow represents the ARS548 point cloud.
-
+<div align=center>
 <table class="table-noborder">
   <tr>
     <td align="center">
@@ -63,7 +63,7 @@
   </tr>
 </table>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 1. Visualization of raw data under different weather conditions</b></font></p>
-
+</div>
 
 <div align=left>
 <img src="./imgs/show_finall.png"/>
