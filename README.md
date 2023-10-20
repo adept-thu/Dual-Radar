@@ -38,13 +38,13 @@
       <figure>
         <img src="./imgs/1.gif" alt="Image 1" width="400" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>a) sunny,daytime</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>a) Sunny,Daytime</b></font></p>
     </td>
     <td align="center">
       <figure>
         <img src="./imgs/2.gif" alt="Image 1" width="400" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>b) sunny,nightime</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>b) Sunny,Nightime</b></font></p>
     </td>
   </tr>
   <tr>
@@ -52,13 +52,13 @@
       <figure>
         <img src="./imgs/3.gif" alt="Image 1" width="400" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>c) rainy,daytime</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>c) Rainy,Daytime</b></font></p>
     </td>
     <td align="center">
       <figure>
         <img src="./imgs/4.gif" alt="Image 1" width="400" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>d) cloudy,daytime</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>d) Cloudy,Daytime</b></font></p>
     </td>
   </tr>
 </table>
