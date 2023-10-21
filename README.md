@@ -62,13 +62,13 @@
     </td>
   </tr>
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 1. Visualization of raw data under different weather conditions</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 1. Visualization of raw data sequences under different weather conditions</b></font></p>
 </div>
 
 <div align=left>
 <img src="./imgs/show_finall.png"/>
 </div>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 2. Data Visualization</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 2. Visualization of 3D bounding box projection on data.The first column represents the 3D frame markers on the image, the second column represents the Arbe Phoenix radar point cloud, the third represents column the ARS548 RDI radar point cloud, and the fourth column represents the LiDAR point cloud. Each row represents a scenario type (includes downtown daytime normal light, downtown daytime backlight, downtown clear night, downtown dusk backlight, downtown clear night and downtown daytime cloudy). </b></font></p>
 
 The URLs listed below are useful for using the `Dual-Radar` dataset and benchmark:
 
