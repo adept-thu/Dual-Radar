@@ -155,9 +155,7 @@ The calib.txt contains tree parts. The dataset consists of two parts: the data p
 
 
 # Label files Discription:
-============================================================
-
-All values (numerical or strings) are separated via spaces, each row corresponds to one object. 
+<b>All values (numerical or strings) are separated via spaces, each row corresponds to one object.</b>
 The 19 columns represent:
 
          Value       Name             Description
