@@ -76,22 +76,22 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
 When unzipping the data, please file and organize it by following the format below:
 
     └─Dual Radar
-     ├─ImageSets.zip
-     ├─testing
-     │  ├─testing_arbe.zip
-     │  ├─testing_ars548.zip
-     │  ├─testing_calib.zip
-     │  ├─testing_image.zip
-     │  ├─testing_label.zip
-     │  ├─testing_robosense.zip
-     ├─training
-     │  ├─training_arbe.zip
-     │  ├─training_ars548.zip
-     │  ├─training_calib.zip
-     │  ├─training_image.zip
-     │  ├─training_label.zip
-     │  ├─training_robosense.zip
-     └─README_dual_radar.txt
+    ├─ImageSets.zip
+    ├─testing
+    │  ├─testing_arbe.zip
+    │  ├─testing_ars548.zip
+    │  ├─testing_calib.zip
+    │  ├─testing_image.zip
+    │  ├─testing_label.zip
+    │  ├─testing_robosense.zip
+    ├─training
+    │  ├─training_arbe.zip
+    │  ├─training_ars548.zip
+    │  ├─training_calib.zip
+    │  ├─training_image.zip
+    │  ├─training_label.zip
+    │  ├─training_robosense.zip
+    └─README_dual_radar.txt
 
 # Sensor Configuration 
 
