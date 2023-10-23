@@ -95,7 +95,7 @@ When unzipping the data, please file and organize it by following the format bel
 This folder contained 10007 frames of labeled pointclouds and image data. The structure of the 
 foler is shown as blow:
 
-└─Dual Radar
+    └─Dual Radar
     ├─ImageSets
     │      test.txt
     │      train.txt
