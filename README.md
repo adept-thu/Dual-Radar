@@ -175,15 +175,15 @@ The calib.txt contains tree parts. The dataset consists of two parts: the data p
 *2: location mean the xyz in label coordinate. the same coordinate origen and the relation of axis is shown below.
 
 lidar coordinate             label coordinate             Arbe coordinate            ARS548 coordinate
-                  |  z                                                               z  |                                     z  |    
-                  |                                                                      |                                         |                 
-                  |                                                                      |                                         |             
-x                 |                x                                                     |            y            x             |            
-       ----------- |      ---------|                                       |-----------         -----------|              
-                    \              |   \                                      \                                        \
-                     \             |     \                                      \                                        \
-                  y   \         y  |       \                                      \                                        \
-                                            z                                     x                                        y 
+                  |  z                                 z  |                             z  |    
+                  |                                       |                                |                 
+                  |                                       |                                |             
+x                 |                x                      |            y            x      |            
+       -----------|        ---------| \                   |-----------          -----------|              
+                   \                |  \                   \                                \
+                    \               |   \                   \                                \
+                  y  \          y   |    \                   \                                \
+                                          z                  x                                 y 
 
 
 
