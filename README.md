@@ -75,7 +75,7 @@ The URLs listed below are useful for using the `Dual-Radar` dataset and benchmar
 
 When unzipping the data, please file and organize it by following the format below:
 
-    └─Dual Radar
+  └─Dual Radar
     ├─ImageSets.zip
     ├─testing
     │  ├─testing_arbe.zip
