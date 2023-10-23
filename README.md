@@ -356,14 +356,14 @@ Organize the dataset according to the following file structure
             ├── arbe
             ├── ars548
             ├── calib
-            ├── image_2
-            ├── label_2
+            ├── image
+            ├── label
             ├── velodyne
       ├── testing
             ├── arbe
             ├── ars548
             ├── calib
-            ├── image_2
+            ├── image
             ├── velodyne
 
 ## Requirements
