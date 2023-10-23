@@ -73,7 +73,8 @@
 # Download Link
 The URLs listed below are useful for using the `Dual-Radar` dataset and benchmark:
 
-When unzipping the data, please file and organize it by following the format below.
+When unzipping the data, please file and organize it by following the format below:
+
     └─Dual Radar
     ├─ImageSets.zip
     ├─testing
