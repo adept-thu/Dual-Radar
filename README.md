@@ -92,6 +92,55 @@ When unzipping the data, please file and organize it by following the format bel
     │  ├─training_label.zip
     │  ├─training_robosense.zip
     └─README_dual_radar.txt
+This folder contained 10007 frames of labeled pointclouds and image data. The structure of the 
+foler is shown as blow:
+
+└─Dual Radar
+    ├─ImageSets
+    │      test.txt
+    │      train.txt
+    │      trainval.txt
+    │      val.txt
+    ├─testing
+    │  ├─arbe
+    │  │      000000.bin	# Raw pointclouds (removed None) of the Arbe.
+    │  │      ...............
+    │  ├─ars548
+    │  │      000000.bin	# Raw pointclouds (removed None) of the ARS548.
+    │  │      ...............
+    │  ├─calib
+    │  │      000000.txt
+    │  │      ...............
+    │  ├─image
+    │  │      000000.png	# Undistort images of the camera.
+    │  │      ...............
+    │  ├─label
+    │  │      000000.txt	# Label in txt format, explain later.
+    │  │      ...............
+    │  ├─robosense
+    │  │      000000.bin	# Raw pointclouds (removed None) of the LiDAR.
+    │  │      ...............
+    ├─training
+    │  ├─arbe
+    │  │      000000.bin
+    │  │      ...............
+    │  ├─ars548
+    │  │      000000.bin
+    │  │      ...............
+    │  ├─calib
+    │  │      000000.txt
+    │  │      ...............
+    │  ├─image
+    │  │      000000.png
+    │  │      ...............
+    │  ├─label
+    │  │      000000.txt
+    │  │      ...............
+    │  ├─robosense
+    │  │      000000.bin
+    │  │      ...............
+    └─README.txt
+
 
 # Sensor Configuration 
 
