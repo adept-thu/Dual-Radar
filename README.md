@@ -141,7 +141,7 @@ foler is shown as blow:
     │  │      ...............
     └─README.txt
 
-The description of calib format:
+# The description of calib format:
 ============================================================
 
 The calib.txt contains tree parts. The dataset consists of two parts: the data part and the alignment calibration file. The data part is image data in png format and point cloud data in bin format. The alignment calibration file includes calibration parameters for the four sensors. The camera-LiDAR, camera-4D radar joint calibration are shown here as examples for illustration.
@@ -154,7 +154,7 @@ The calib.txt contains tree parts. The dataset consists of two parts: the data p
 
 
 
-Label files Discription:
+# Label files Discription:
 ============================================================
 
 All values (numerical or strings) are separated via spaces, each row corresponds to one object. 
@@ -197,13 +197,7 @@ x                |                x                                             
 
 
 
-*3: The difference between rotation_y and alpha are, that rotation_y is directly given in camera 
-coordinates, while alpha also considers the vector from the camera center to the object center, 
-to compute the relative orientation of the object with respect to the camera. For example, a car 
-which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0, 
-no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when 
-this object is located along the Z-axis of the camera. When moving the car away from the Z-axis,
-the observation angle will change.
+*3: The difference between rotation_y and alpha are, that rotation_y is directly given in camera coordinates, while alpha also considers the vector from the camera center to the object center, to compute the relative orientation of the object with respect to the camera. For example, a car  which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0,  no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when  this object is located along the Z-axis of the camera. When moving the car away from the Z-axis, the observation angle will change.
 
 
 # Sensor Configuration 
