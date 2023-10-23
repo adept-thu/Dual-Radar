@@ -141,6 +141,70 @@ foler is shown as blow:
     │  │      ...............
     └─README.txt
 
+The description of calib format:
+============================================================
+
+The calib.txt contains tree parts. The dataset consists of two parts: the data part and the alignment calibration file. The data part is image data in png format and point cloud data in bin format. The alignment calibration file includes calibration parameters for the four sensors. The camera-LiDAR, camera-4D radar joint calibration are shown here as examples for illustration.
+
+	Dual Radar_cam.Intrinsics.RadialDistortion: Barrel distortion of Dual Radar_cam [ k1, k2, k3 ]
+	Dual Radar_cam.Intrinsics.TangentialDistortion: radial distortion of Dual Radar_cam [ p1, p2 ]
+	Dual Radar_cam.IntrinsicMatrix: Dual Radar_cam's intrinsic matrix [ af, 0, 0; 0, bf, 0; u, v, 1]
+	Dual Radar_LiDAR-->Dual Radar_cam: Dual Radar_lidar to Dual Radar cam's single response matrix P(4×4)
+	Dual Radar_radar--> Dual Radar_cam: Dual Radar_radar to Dual Radar_cam rotation matrix + translation matrix P(3×4)
+
+
+
+Label files Discription:
+============================================================
+
+All values (numerical or strings) are separated via spaces, each row corresponds to one object. 
+The 19 columns represent:
+
+Value       Name             Description
+-------------------------------------------------------------------------------------------------------
+   1            type               Describes the type of object: 'Car', 'Van', 'Truck', 'Pedestrian',  
+                                       'Person_sitting', 'Cyclist', 'Tram', 'Misc' or 'DonCare'
+   1         truncated         Float from 0 (non-truncated) to 1 (truncated), where truncated refers to the
+                                       object leaving image boundaries
+   1         occluded          Integer (0,1,2,3) indicating occlusion state: 0 = fully visible, 1 = partly
+                                       occluded, 2 = largely occluded, 3 = unknown
+   1         alpha                Observation angle of object, ranging [-pi..pi]
+   4         bbox                 2D bounding box of object in the image (0-based index): contains left, top, 
+                                       right, bottom pixel coordinates. 
+   3        dimensions       3D object dimensions: height, width, length (in meters).
+   3        location            3D object location x,y,z in camera coordinates (in meters).
+   1        rotation_y         Rotation ry around Y-axis in camera coordinates [-pi..pi].
+   1        score                 Only for results: Float,indicating confidence in detection, needed for p/r 
+                                       curves , higher is better.
+
+
+*1: Since the labeling work was done in label coordinate, the bounding box out of the image 
+FOV(1920×1080) needs to be cut.
+
+*2: location mean the xyz in label coordinate. the same coordinate origen and the relation of 
+axis is shown below.
+
+lidar coordinate             label coordinate             Arbe coordinate            ARS548 coordinate
+                  |  z                                                               z  |                                     z  |    
+                  |                                                                      |                                         |                 
+                  |                                                                      |                                         |             
+x                |                x                                                     |            y            x             |            
+  ----------- |             ---------|                                       |-----------         -----------|              
+                      \                       |   \                                      \                                        \
+                        \                     |     \                                      \                                        \
+                     y   \               y  |       \                                      \                                        \
+                                                         z                                     x                                        y 
+
+
+
+*3: The difference between rotation_y and alpha are, that rotation_y is directly given in camera 
+coordinates, while alpha also considers the vector from the camera center to the object center, 
+to compute the relative orientation of the object with respect to the camera. For example, a car 
+which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0, 
+no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when 
+this object is located along the Z-axis of the camera. When moving the car away from the Z-axis,
+the observation angle will change.
+
 
 # Sensor Configuration 
 
