@@ -178,22 +178,20 @@ Value       Name             Description
                                        curves , higher is better.
 
 
-*1: Since the labeling work was done in label coordinate, the bounding box out of the image 
-FOV(1920×1080) needs to be cut.
+*1: Since the labeling work was done in label coordinate, the bounding box out of the image FOV(1920×1080) needs to be cut.
 
-*2: location mean the xyz in label coordinate. the same coordinate origen and the relation of 
-axis is shown below.
+*2: location mean the xyz in label coordinate. the same coordinate origen and the relation of axis is shown below.
 
 lidar coordinate             label coordinate             Arbe coordinate            ARS548 coordinate
                   |  z                                                               z  |                                     z  |    
                   |                                                                      |                                         |                 
                   |                                                                      |                                         |             
-x                |                x                                                     |            y            x             |            
-  ----------- |             ---------|                                       |-----------         -----------|              
-                      \                       |   \                                      \                                        \
-                        \                     |     \                                      \                                        \
-                     y   \               y  |       \                                      \                                        \
-                                                         z                                     x                                        y 
+x                 |                x                                                     |            y            x             |            
+       ----------- |      ---------|                                       |-----------         -----------|              
+                    \              |   \                                      \                                        \
+                     \             |     \                                      \                                        \
+                  y   \         y  |       \                                      \                                        \
+                                            z                                     x                                        y 
 
 
 
