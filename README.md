@@ -368,30 +368,30 @@ Organize the dataset according to the following file structure
               ├── trainval.txt
               ├── val.txt
               ├── test.txt
-	   ├── training
+          ├── training
               ├── calib
               ├── image
               ├── label
-              ├── arbe
-           ├── testing
+              ├── velodyne # Corresponding to the robosense folder in the original data package
+          ├── testing
               ├── calib
               ├── image
-              ├── arbe
+              ├── velodyne # Corresponding to the robosense folder in the original data package
       ├── radar_arbe
            ├── ImageSets
               ├── train.txt
               ├── trainval.txt
               ├── val.txt
               ├── test.txt
-	   ├── training
+          ├── training
               ├── calib
               ├── image
               ├── label
-              ├── ars548
-           ├── testing
+              ├── velodyne # Corresponding to the robosense folder in the original data package
+          ├── testing
               ├── calib
               ├── image
-              ├── ars548
+              ├── velodyne # Corresponding to the robosense folder in the original data package
 
 ## Requirements
 
