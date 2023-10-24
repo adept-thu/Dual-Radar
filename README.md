@@ -387,11 +387,15 @@ conda activate Dual-Radardet
 ```
 pip install -r requirements.txt
 ```
-5. Install Spconv（our cuda version is 113）
+5. Install pypcd
+```
+pip install git+https://github.com/DanielPollithy/pypcd.git
+```
+6. Install Spconv（our cuda version is 113）
 ```
 pip install spconv-cu113
 ```
-6. Build packages for Dual-Radardet
+7. Build packages for Dual-Radardet
 ```
 python setup.py develop
 ```
