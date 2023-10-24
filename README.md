@@ -377,7 +377,7 @@ Organize the dataset according to the following file structure
               ├── calib
               ├── image
               ├── arbe
-       ├── radar_arbe
+      ├── radar_arbe
           ├── ImageSets
               ├── train.txt
               ├── trainval.txt
