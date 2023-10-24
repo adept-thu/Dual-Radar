@@ -222,8 +222,8 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
         <td align=center>camera</td>
         <td align=center>acA1920-40uc</td>
         <td align=center>-</td>
-        <td align=center>1920X</td>
-        <td align=center>1200X</td>
+        <td align=center>1920PX</td>
+        <td align=center>1200PX</td>
         <td align=center>-</td>
         <td align=center>-</td>
         <td align=center>-</td>
