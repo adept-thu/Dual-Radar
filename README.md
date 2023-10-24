@@ -166,7 +166,7 @@ The calib.txt contains tree parts. The dataset consists of two parts: the data p
          3        location           3D object location x,y,z in camera coordinates (in meters).
          1        rotation_y         Rotation ry around Y-axis in camera coordinates [-pi..pi].
          1        score              Only for results: Float,indicating confidence in detection, needed for p/r curves , higher is better.
-
+         1        track_id           Path tracking of the same object
 
 *1: Since the labeling work was done in label coordinate, the bounding box out of the image FOV(1920×1080) needs to be cut.
 
