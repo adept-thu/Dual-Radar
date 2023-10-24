@@ -380,7 +380,6 @@ Organize the dataset according to the following file structure
 conda create -n Dual-Radardet python=3.8.16
 conda activate Dual-Radardet
 ```
-
 3. Install PyTorch (We recommend pytorch 1.10.1.)
 
 4. Install the dependencies
