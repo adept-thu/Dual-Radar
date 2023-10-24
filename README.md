@@ -357,11 +357,11 @@ Organize the dataset according to the following file structure
               ├── calib
               ├── image
               ├── label
-              ├── velodyne
+              ├── velodyne # Corresponding to the robosense folder in the original data package
           ├── testing
               ├── calib
               ├── image
-              ├── velodyne
+              ├── velodyne # Corresponding to the robosense folder in the original data package
       ├── radar_arbe
           ├── ImageSets
               ├── train.txt
