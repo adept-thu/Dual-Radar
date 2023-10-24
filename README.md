@@ -450,6 +450,8 @@ python test.py --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --ckpt ${CKP
 sh scripts/dist_test.sh ${NUM_GPUS} \
     --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE}
 ```
+#  Visualization
+
 ## Quick Demo
 Here we provide a quick demo to test a pretrained model on the custom point cloud data and visualize the predicted results
 * Download the pretrained model as shown in Table 4~8.
