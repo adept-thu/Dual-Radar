@@ -142,7 +142,7 @@ foler is shown as blow:
     └─README.txt
 
 # News
-[2023.10.25] our code has support the frameworks(Voxel-RCNN, pointpillars, second, CAS-V, CAS-T, RDIOU).
+[2023.10.25] our code has support the frameworks(Voxel-RCNN, pointpillars, Second, RDIOU,VFF).
 
 # The description of calib format:
 The calib.txt contains tree parts. The dataset consists of two parts: the data part and the alignment calibration file. The data part is image data in png format and point cloud data in bin format. The alignment calibration file includes calibration parameters for the four sensors. The camera-LiDAR, camera-4D radar joint calibration are shown here as examples for illustration.
