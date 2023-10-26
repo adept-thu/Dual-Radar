@@ -159,19 +159,24 @@ class VoxelBackBone8x(nn.Module):
         # [batch_size, 4, [41, 1600, 1408]] --> [batch_size, 16, [41, 1600, 1408]]
         x = self.conv_input(input_sp_tensor)
         # [batch_size, 16, [41, 1600, 1408]] --> [batch_size, 16, [41, 1600, 1408]]
+        #print(x)
         x_conv1 = self.conv1(x)
         # [batch_size, 16, [41, 1600, 1408]] --> [batch_size, 32, [21, 800, 704]]
+        #print(x_conv1)
         x_conv2 = self.conv2(x_conv1)
         # [batch_size, 32, [21, 800, 704]] --> [batch_size, 64, [11, 400, 352]]
+        #print(x_conv2)
         x_conv3 = self.conv3(x_conv2)
         # [batch_size, 64, [11, 400, 352]] --> [batch_size, 64, [5, 200, 176]]
+        #print(x_conv3)
         x_conv4 = self.conv4(x_conv3)
+        #print(x_conv4)
 
         # for detection head
         # [200, 176, 5] -> [200, 176, 2]
         # [batch_size, 64, [5, 200, 176]] --> [batch_size, 128, [2, 200, 176]]
         out = self.conv_out(x_conv4)
-
+        #print(out)
         batch_dict.update({
             'encoded_spconv_tensor': out,
             'encoded_spconv_tensor_stride': 8

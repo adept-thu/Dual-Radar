@@ -15,9 +15,9 @@ from .waymo.waymo_dataset import WaymoDataset
 from .pandaset.pandaset_dataset import PandasetDataset
 from .lyft.lyft_dataset import LyftDataset
 from .data.data_dataset import DataDataset
-from .mine.kitti_dataset import MineDataset
-from .mine.kitti_dataset_arbe import MineDataset_ARBE
-from .mine.kitti_dataset_ars548 import MineDataset_ARS548
+from .dual_radar.dual_radar_dataset import DualradarDataset
+from .dual_radar.dual_radar_dataset_arbe import DualradarDataset_ARBE
+from .dual_radar.dual_radar_dataset_ars548 import DualradarDataset_ARS548
 
 __all__ = {
     'DatasetTemplate': DatasetTemplate,
@@ -30,10 +30,10 @@ __all__ = {
     'PandasetDataset': PandasetDataset,
     'LyftDataset': LyftDataset,
     'DataDataset': DataDataset,
-    'MineDataset': MineDataset,
+    'DualradarDataset': DualradarDataset,
     #fangchange
-    'MineDataset_ARBE': MineDataset_ARBE,
-    'MineDataset_ARS548': MineDataset_ARS548
+    'DualradarDataset_ARBE': DualradarDataset_ARBE,
+    'DualradarDataset_ARS548': DualradarDataset_ARS548
 }
 
 

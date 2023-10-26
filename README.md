@@ -141,10 +141,9 @@ foler is shown as blow:
     │  │      ...............
     └─README.txt
 
-# News
-[2023.10.25] our code has support the frameworks(Voxel-RCNN, pointpillars, Second, RDIOU,VFF).
-
 # The description of calib format:
+============================================================
+
 The calib.txt contains tree parts. The dataset consists of two parts: the data part and the alignment calibration file. The data part is image data in png format and point cloud data in bin format. The alignment calibration file includes calibration parameters for the four sensors. The camera-LiDAR, camera-4D radar joint calibration are shown here as examples for illustration.
 
 	Dual Radar_cam.Intrinsics.RadialDistortion: Barrel distortion of Dual Radar_cam [ k1, k2, k3 ]
@@ -169,7 +168,7 @@ The calib.txt contains tree parts. The dataset consists of two parts: the data p
          3        location           3D object location x,y,z in camera coordinates (in meters).
          1        rotation_y         Rotation ry around Y-axis in camera coordinates [-pi..pi].
          1        score              Only for results: Float,indicating confidence in detection, needed for p/r curves , higher is better.
-         1        track_id           Path tracking of the same object
+
 
 *1: Since the labeling work was done in label coordinate, the bounding box out of the image FOV(1920×1080) needs to be cut.
 
@@ -225,8 +224,8 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
         <td align=center>camera</td>
         <td align=center>acA1920-40uc</td>
         <td align=center>-</td>
-        <td align=center>1920PX</td>
-        <td align=center>1200PX</td>
+        <td align=center>1920X</td>
+        <td align=center>1200X</td>
         <td align=center>-</td>
         <td align=center>-</td>
         <td align=center>-</td>
@@ -348,51 +347,24 @@ Organize your code structure as follows
 Organize the dataset according to the following file structure
 
     Dataset
-      ├── lidar
-          ├── ImageSets
-              ├── train.txt
-              ├── trainval.txt
-              ├── val.txt
-              ├── test.txt
-          ├── training
-              ├── calib
-              ├── image
-              ├── label
-              ├── velodyne # Corresponding to the robosense folder in the original data package
-          ├── testing
-              ├── calib
-              ├── image
-              ├── velodyne # Corresponding to the robosense folder in the original data package
-      ├── radar_arbe
-           ├── ImageSets
-              ├── train.txt
-              ├── trainval.txt
-              ├── val.txt
-              ├── test.txt
-          ├── training
-              ├── calib
-              ├── image
-              ├── label
-              ├── arbe
-          ├── testing
-              ├── calib
-              ├── image
-              ├── arbe
-      ├── radar_ars548
-           ├── ImageSets
-              ├── train.txt
-              ├── trainval.txt
-              ├── val.txt
-              ├── test.txt
-          ├── training
-              ├── calib
-              ├── image
-              ├── label
-              ├── ars548
-          ├── testing
-              ├── calib
-              ├── image
-              ├── ars548
+      ├── ImageSets
+            ├── train.txt
+            ├── trainval.txt
+            ├── val.txt
+            ├── test.txt
+      ├── training
+            ├── arbe
+            ├── ars548
+            ├── calib
+            ├── image
+            ├── label
+            ├── velodyne
+      ├── testing
+            ├── arbe
+            ├── ars548
+            ├── calib
+            ├── image
+            ├── velodyne
 
 ## Requirements
 
@@ -408,21 +380,18 @@ Organize the dataset according to the following file structure
 conda create -n Dual-Radardet python=3.8.16
 conda activate Dual-Radardet
 ```
+
 3. Install PyTorch (We recommend pytorch 1.10.1.)
 
 4. Install the dependencies
 ```
 pip install -r requirements.txt
 ```
-5. Install pypcd
-```
-pip install git+https://github.com/DanielPollithy/pypcd.git
-```
-6. Install Spconv（our cuda version is 113）
+5. Install Spconv（our cuda version is 113）
 ```
 pip install spconv-cu113
 ```
-7. Build packages for Dual-Radardet
+6. Build packages for Dual-Radardet
 ```
 python setup.py develop
 ```
@@ -430,11 +399,11 @@ python setup.py develop
 ## Train & Evaluation
 * Generate the data infos by running the following command:
 ```
-python -m pcdet.datasets.dual_radar.dual_radar_dataset create_dual_radar_infos tools/cfgs/dataset_configs/dual_radar_dataset.yaml
+python -m pcdet.datasets.mine.kitti_dataset create_mine_infos tools/cfgs/dataset_configs/mine_dataset.yaml
 # or you want to use arbe data
-python -m pcdet.datasets.dual_radar.dual_radar_dataset_arbe create_dual_radar_infos tools/cfgs/dataset_configs/dual_radar_dataset_arbe.yaml
+python -m pcdet.datasets.mine.kitti_dataset_arbe create_mine_infos tools/cfgs/dataset_configs/mine_dataset_arbe.yaml
 # or ars548
-python -m pcdet.datasets.dual_radar.dual_radar_dataset_ars548 create_dual_radar_infos tools/cfgs/dataset_configs/dual_radar_dataset_ars548.yaml
+python -m pcdet.datasets.mine.kitti_dataset_ars548 create_mine_infos tools/cfgs/dataset_configs/mine_dataset_ars548.yaml
 ```
 * To train the model on single GPU, prepare the total dataset and run
 ```
@@ -453,8 +422,6 @@ python test.py --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --ckpt ${CKP
 sh scripts/dist_test.sh ${NUM_GPUS} \
     --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE}
 ```
-#  Visualization
-
 ## Quick Demo
 Here we provide a quick demo to test a pretrained model on the custom point cloud data and visualize the predicted results
 * Download the pretrained model as shown in Table 4~8.

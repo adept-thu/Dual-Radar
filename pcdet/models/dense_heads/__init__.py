@@ -7,6 +7,8 @@ from .point_head_simple import PointHeadSimple
 from .point_intra_part_head import PointIntraPartOffsetHead
 from .center_head import CenterHead
 from .IASSD_head import IASSD_Head
+from .anchor_head_rdiou import AnchorHeadRDIoU
+from .anchor_head_rdiou_3cat import AnchorHeadRDIoU_3CAT
 
 __all__ = {
     'AnchorHeadTemplate': AnchorHeadTemplate,
@@ -18,4 +20,6 @@ __all__ = {
     'CenterHead': CenterHead,
     'IASSD_Head': IASSD_Head,
     'PointHeadVote': PointHeadVote,
+    'AnchorHeadRDIoU': AnchorHeadRDIoU,
+    'AnchorHeadRDIoU_3CAT': AnchorHeadRDIoU_3CAT
 }

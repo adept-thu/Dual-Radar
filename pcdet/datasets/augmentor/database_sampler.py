@@ -9,7 +9,7 @@ import SharedArray
 import torch.distributed as dist
 
 from ...ops.iou3d_nms import iou3d_nms_utils
-from ...utils import box_utils, common_utils, calibration_mine
+from ...utils import box_utils, common_utils, calibration_dual_radar
 from pcdet.datasets.kitti.kitti_object_eval_python import kitti_common
 
 class DataBaseSampler(object):
@@ -17,7 +17,7 @@ class DataBaseSampler(object):
         self.root_path = root_path
         self.class_names = class_names
         self.sampler_cfg = sampler_cfg
-
+        #self.data_type_cfg = data_type_cfg
         self.img_aug_type = sampler_cfg.get('IMG_AUG_TYPE', None)
         self.img_aug_iou_thresh = sampler_cfg.get('IMG_AUG_IOU_THRESH', 0.5)
 
@@ -27,6 +27,8 @@ class DataBaseSampler(object):
             self.db_infos[class_name] = []
 
         self.use_shared_memory = sampler_cfg.get('USE_SHARED_MEMORY', False)
+        #print(sampler_cfg)
+        self.use_data_type = sampler_cfg.get('USE_DATA_TYPE', "lidar")
 
         for db_info_path in sampler_cfg.DB_INFO_PATH:
             db_info_path = self.root_path.resolve() / db_info_path
@@ -228,7 +230,7 @@ class DataBaseSampler(object):
 
     def collect_image_crops_kitti(self, info, data_dict, obj_points, sampled_gt_boxes, sampled_gt_boxes2d, idx):
         calib_file = kitti_common.get_calib_path(int(info['image_idx']), self.root_path, relative_path=False)
-        sampled_calib = calibration_mine.Calibration(calib_file)
+        sampled_calib = calibration_dual_radar.Calibration(calib_file)
         points_2d, depth_2d = sampled_calib.lidar_to_img(obj_points[:,:3])
 
         if True:  # self.point_refine:
@@ -386,8 +388,13 @@ class DataBaseSampler(object):
                 file_path = self.root_path / info['path']
                 obj_points = np.fromfile(str(file_path), dtype=np.float32).reshape(
                     [-1, self.sampler_cfg.NUM_POINT_FEATURES])
-
-            obj_points[:, :3] += info['box3d_lidar'][:3]
+            
+            if self.use_data_type == "lidar":
+                obj_points[:, :3] += info['box3d_lidar'][:3]#liuiln
+            elif self.use_data_type == "arbe":
+                obj_points[:, :3] += info['box3d_arbe'][:3]#liuiln
+            elif self.use_data_type == "ars548":
+                obj_points[:, :3] += info['box3d_ars'][:3]#liuiln
 
             if self.sampler_cfg.get('USE_ROAD_PLANE', False):
                 # mv height
@@ -442,7 +449,12 @@ class DataBaseSampler(object):
             if int(sample_group['sample_num']) > 0:
                 sampled_dict = self.sample_with_fixed_number(class_name, sample_group)
 
-                sampled_boxes = np.stack([x['box3d_lidar'] for x in sampled_dict], axis=0).astype(np.float32)
+                if self.use_data_type == "lidar":
+                    sampled_boxes = np.stack([x['box3d_lidar'] for x in sampled_dict], axis=0).astype(np.float32)#liuiln
+                elif self.use_data_type == "arbe":
+                    sampled_boxes = np.stack([x['box3d_arbe'] for x in sampled_dict], axis=0).astype(np.float32)#liuiln
+                elif self.use_data_type == "ars548":
+                    sampled_boxes = np.stack([x['box3d_ars'] for x in sampled_dict], axis=0).astype(np.float32)#liuiln
 
                 assert not self.sampler_cfg.get('DATABASE_WITH_FAKELIDAR', False), 'Please use latest codes to generate GT_DATABASE'
 

@@ -94,6 +94,7 @@ class BaseBEVBackbone(nn.Module):
         x = spatial_features
         # 对不同的分支部分分别进行conv和deconv的操作
         for i in range(len(self.blocks)):
+            #print(x.shape)
             x = self.blocks[i](x)
             """
             SECOND中一共存在两个下采样分支，

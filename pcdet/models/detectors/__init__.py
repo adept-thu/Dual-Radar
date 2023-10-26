@@ -13,6 +13,9 @@ from .pv_rcnn_plusplus import PVRCNNPlusPlus
 from .pfa import pfaNet
 from .IASSD import IASSD
 from .point_3dssd import Point3DSSD
+from .rdiou_net import RDIoUNet
+from .CT3D import CT3D
+from .CT3D_3CAT import CT3D_3CAT
 
 __all__ = {
     'Detector3DTemplate': Detector3DTemplate,
@@ -30,6 +33,9 @@ __all__ = {
     'pfaNet': pfaNet,
     'IASSD': IASSD,
     'BiProDet': Point3DSSD,
+    'RDIoUNet': RDIoUNet,
+    'CT3D': CT3D,
+    'CT3D_3CAT': CT3D_3CAT
 }
 
 

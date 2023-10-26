@@ -25,6 +25,7 @@ class HeightCompression(nn.Module):
         spatial_features = encoded_spconv_tensor.dense()
         # batch_size，128，2，200，176
         N, C, D, H, W = spatial_features.shape
+        #print("1111111111111111111111111",spatial_features.shape)
         """
         将密集的3D tensor reshape为2D鸟瞰图特征    
         将两个深度方向内的voxel特征拼接成一个 shape : (batch_size, 256, 200, 176)
@@ -33,6 +34,7 @@ class HeightCompression(nn.Module):
         """
         spatial_features = spatial_features.view(N, C * D, H, W)
         # 将特征和采样尺度加入batch_dict
+        #print("1111111111111111111111111",spatial_features.shape)
         batch_dict['spatial_features'] = spatial_features
         # 特征图的下采样倍数 8倍
         batch_dict['spatial_features_stride'] = batch_dict['encoded_spconv_tensor_stride']

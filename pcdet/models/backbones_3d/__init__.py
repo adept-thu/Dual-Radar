@@ -4,7 +4,7 @@ from .spconv_backbone_focal import VoxelBackBone8xFocal
 from .spconv_unet import UNetV2
 from .spconv_backbone_kradar import VoxelBackBone_kradar
 from .IASSD_backbone import IASSD_Backbone
-
+from .spconv_backbone_casa import VoxelBackBone8xcasa
 __all__ = {
     'VoxelBackBone8x': VoxelBackBone8x,
     'UNetV2': UNetV2,
@@ -16,4 +16,5 @@ __all__ = {
     'IASSD_Backbone': IASSD_Backbone,
     '3DSSD_Backbone': _3DSSD_Backbone,
     'PointNet2FSMSG': PointNet2FSMSG,
+    'VoxelBackBone8xcasa': VoxelBackBone8xcasa
 }

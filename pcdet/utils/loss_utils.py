@@ -661,3 +661,39 @@ class RegLossCenterNet(nn.Module):
             pred = _transpose_and_gather_feat(output, ind)
         loss = _reg_loss(pred, target, mask)
         return loss
+
+class SigmoidQualityFocalClassificationLoss(nn.Module):
+    """
+    Sigmoid focal cross entropy loss.
+    """
+
+    def __init__(self, gamma: float = 2.0, alpha: float = 0.25):
+        """
+        Args:
+            gamma: Weighting parameter to balance loss for hard and easy examples.
+        """
+        super(SigmoidQualityFocalClassificationLoss, self).__init__()
+        self.gamma = gamma
+        self.alpha = alpha
+
+    def forward(self, input: torch.Tensor, target: torch.Tensor, weights: torch.Tensor):
+        # alpha_weight = target * self.alpha + (1 - target) * (1 - self.alpha)
+        func = F.binary_cross_entropy_with_logits
+        # negatives are supervised by 0 quality score
+        pred_sigmoid = torch.sigmoid(input)
+        scale_factor = pred_sigmoid
+        zerolabel = scale_factor.new_zeros(input.shape)
+        loss = func(input, zerolabel, reduction='none') * scale_factor.pow(self.gamma)
+
+        # positives are supervised by bbox quality (IoU) score
+        positives = target > 0
+        scale_factor = target[positives] - pred_sigmoid[positives]
+        loss[positives] = func(input[positives], target[positives], reduction='none') * scale_factor.abs().pow(self.gamma)
+
+        if weights.shape.__len__() == 2 or \
+                (weights.shape.__len__() == 1 and target.shape.__len__() == 2):
+            weights = weights.unsqueeze(-1)
+
+        assert weights.shape.__len__() == loss.shape.__len__()
+
+        return loss * weights * self.alpha
