@@ -13,7 +13,7 @@ from ...utils import box_utils, common_utils, calibration_dual_radar
 from pcdet.datasets.kitti.kitti_object_eval_python import kitti_common
 
 class DataBaseSampler(object):
-    def __init__(self, root_path, sampler_cfg, class_names, logger=None):
+    def __init__(self, root_path, sampler_cfg, use_data_type, class_names, logger=None):
         self.root_path = root_path
         self.class_names = class_names
         self.sampler_cfg = sampler_cfg
@@ -28,7 +28,7 @@ class DataBaseSampler(object):
 
         self.use_shared_memory = sampler_cfg.get('USE_SHARED_MEMORY', False)
         #print(sampler_cfg)
-        self.use_data_type = sampler_cfg.get('USE_DATA_TYPE', "lidar")
+        self.use_data_type = use_data_type
 
         for db_info_path in sampler_cfg.DB_INFO_PATH:
             db_info_path = self.root_path.resolve() / db_info_path

@@ -33,6 +33,8 @@ class DemoDataset(DatasetTemplate):
         super().__init__(
             dataset_cfg=dataset_cfg, class_names=class_names, training=training, root_path=root_path, logger=logger
         )
+        #print(dataset_cfg.DATA_AUGMENTOR)
+        self.use_data_type = dataset_cfg.DATA_AUGMENTOR.get('USE_DATA_TYPE', None)
         self.root_path = root_path
         self.ext = ext
         data_file_list = glob.glob(str(root_path / f'*{self.ext}')) if self.root_path.is_dir() else [self.root_path]
@@ -45,7 +47,13 @@ class DemoDataset(DatasetTemplate):
 
     def __getitem__(self, index):
         if self.ext == '.bin':
-            points = np.fromfile(self.sample_file_list[index], dtype=np.float32).reshape(-1, 4)
+            print(self.use_data_type)
+            if self.use_data_type == 'lidar':
+               points = np.fromfile(self.sample_file_list[index], dtype=np.float32).reshape(-1, 6)
+               #points = points[:,:4]
+            else:
+               points = np.fromfile(self.sample_file_list[index], dtype=np.float32).reshape(-1, 5)
+               #points = points[:,:4] 
         elif self.ext == '.npy':
             points = np.load(self.sample_file_list[index])
         else:
@@ -62,11 +70,11 @@ class DemoDataset(DatasetTemplate):
 
 def parse_config():
     parser = argparse.ArgumentParser(description='arg parser')
-    parser.add_argument('--cfg_file', type=str, default='cfgs/kitti_models/second.yaml',
+    parser.add_argument('--cfg_file', type=str, default='/ai/volume/Dual-Radar-master/tools/cfgs/dual_radar_models/pointpillar_lidar.yaml',
                         help='specify the config for demo')
-    parser.add_argument('--data_path', type=str, default='demo_data',
+    parser.add_argument('--data_path', type=str, default='/ai/volume/Dual-Radar-master/data/dual_radar/lidar/training/velodyne/000000.bin',
                         help='specify the point cloud data file or directory')
-    parser.add_argument('--ckpt', type=str, default=None, help='specify the pretrained model')
+    parser.add_argument('--ckpt', type=str, default='/ai/volume/Dual-Radar-master/models/pointpillars_liadr_80.pth', help='specify the pretrained model')
     parser.add_argument('--ext', type=str, default='.bin', help='specify the extension of your point cloud data file')
 
     args = parser.parse_args()

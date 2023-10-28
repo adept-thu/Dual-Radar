@@ -19,6 +19,8 @@ class DataAugmentor(object):
         self.data_augmentor_queue = []
         aug_config_list = augmentor_configs if isinstance(augmentor_configs, list) \
             else augmentor_configs.AUG_CONFIG_LIST
+        
+        self.USE_DATA_TYPE = augmentor_configs.get('USE_DATA_TYPE', "lidar")# liuiln add
 
         for cur_cfg in aug_config_list:
             if not isinstance(augmentor_configs, list):
@@ -31,9 +33,11 @@ class DataAugmentor(object):
         #import pdb; pdb.set_trace()
         #print(data_type_cfg)
         #bar()
+        #print(self.USE_DATA_TYPE)
         db_sampler = database_sampler.DataBaseSampler(
             root_path=self.root_path,
             sampler_cfg=config,
+            use_data_type=self.USE_DATA_TYPE,
             class_names=self.class_names,
             logger=self.logger
         )
