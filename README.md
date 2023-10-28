@@ -348,7 +348,7 @@ Organize your code structure as follows
 
 Organize the dataset according to the following file structure
 
-    Dataset
+    dual_radar
       ├── lidar
         ├── ImageSets
             ├── train.txt
