@@ -429,11 +429,11 @@ python setup.py develop
 ## Train & Evaluation
 * Generate the data infos by running the following command:
 ```
-python -m pcdet.datasets.mine.kitti_dataset create_mine_infos tools/cfgs/dataset_configs/mine_dataset.yaml
+python -m pcdet.datasets.dual_radar.dual_radar_dataset create_dual_radar_infos tools/cfgs/dataset_configs/dual_radar_dataset.yaml
 # or you want to use arbe data
-python -m pcdet.datasets.mine.kitti_dataset_arbe create_mine_infos tools/cfgs/dataset_configs/mine_dataset_arbe.yaml
+python -m pcdet.datasets.dual_radar.dual_radar_dataset_arbe create_dual_radar_infos tools/cfgs/dataset_configs/dual_radar_dataset_arbe.yaml
 # or ars548
-python -m pcdet.datasets.mine.kitti_dataset_ars548 create_mine_infos tools/cfgs/dataset_configs/mine_dataset_ars548.yaml
+python -m pcdet.datasets.dual_radar.dual_radar_dataset_ars548 create_dual_radar_infos tools/cfgs/dataset_configs/dual_radar_dataset_ars548.yaml
 ```
 * To train the model on single GPU, prepare the total dataset and run
 ```
