@@ -357,12 +357,12 @@ Organize the dataset according to the following file structure
             ├── test.txt
         ├── training
             ├── calib
-            ├── image
-            ├── label
+            ├── image_2
+            ├── label_2
             ├── velodyne
         ├── testing
             ├── calib
-            ├── image
+            ├── image_2
             ├── velodyne
       ├── radar_arbe
         ├── ImageSets
@@ -372,12 +372,12 @@ Organize the dataset according to the following file structure
             ├── test.txt
         ├── training
             ├── calib
-            ├── image
-            ├── label
+            ├── image_2
+            ├── label_2
             ├── arbe
         ├── testing
             ├── calib
-            ├── image
+            ├── image_2
             ├── arbe
       ├── radar_ars548
         ├── ImageSets
@@ -387,12 +387,12 @@ Organize the dataset according to the following file structure
             ├── test.txt
         ├── training
             ├── calib
-            ├── image
-            ├── label
+            ├── image_2
+            ├── label_2
             ├── ars548
         ├── testing
             ├── calib
-            ├── image
+            ├── image_2
             ├── ars548
 	
 
