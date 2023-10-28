@@ -349,24 +349,52 @@ Organize your code structure as follows
 Organize the dataset according to the following file structure
 
     Dataset
-      ├── ImageSets
+      ├── lidar
+        ├── ImageSets
             ├── train.txt
             ├── trainval.txt
             ├── val.txt
             ├── test.txt
-      ├── training
-            ├── arbe
-            ├── ars548
+        ├── training
             ├── calib
             ├── image
             ├── label
             ├── velodyne
-      ├── testing
-            ├── arbe
-            ├── ars548
+        ├── testing
             ├── calib
             ├── image
             ├── velodyne
+      ├── radar_arbe
+        ├── ImageSets
+            ├── train.txt
+            ├── trainval.txt
+            ├── val.txt
+            ├── test.txt
+        ├── training
+            ├── calib
+            ├── image
+            ├── label
+            ├── arbe
+        ├── testing
+            ├── calib
+            ├── image
+            ├── arbe
+      ├── radar_ars548
+        ├── ImageSets
+            ├── train.txt
+            ├── trainval.txt
+            ├── val.txt
+            ├── test.txt
+        ├── training
+            ├── calib
+            ├── image
+            ├── label
+            ├── ars548
+        ├── testing
+            ├── calib
+            ├── image
+            ├── ars548
+	
 
 ## Requirements
 
