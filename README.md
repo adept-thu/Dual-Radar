@@ -192,7 +192,6 @@ The visualization of raw data collected under different weather conditions and t
 
 * When unzipping the data, please file and organize it by following the format below:
 
-
     └─Dual Radar
     ├─ImageSets.zip
     ├─testing
