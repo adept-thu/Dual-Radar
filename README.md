@@ -429,7 +429,7 @@ python -m pcdet.datasets.dual_radar.dual_radar_dataset_ars548 create_dual_radar_
 ```
 python train.py --cfg_file ${CONFIG_FILE}
 ```
-* To train the model on multi-GPUS, prepare the total dataset and run
+* To train the model on multi-GPUs, prepare the total dataset and run
 ```
 sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE}
 ```
@@ -437,7 +437,7 @@ sh scripts/dist_train.sh ${NUM_GPUS} --cfg_file ${CONFIG_FILE}
 ```
 python test.py --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --ckpt ${CKPT}
 ```
-* To evaluate the model on multi-GPUS, modify the path and run
+* To evaluate the model on multi-GPUs, modify the path and run
 ```
 sh scripts/dist_test.sh ${NUM_GPUS} \
     --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE}
