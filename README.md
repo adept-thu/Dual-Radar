@@ -291,7 +291,7 @@ foler is shown as blow:
 <p align="center">
   <img src = "./imgs/coordinate.png" width="60%">
 </p>
-<p align="center"><font face="Helvetica" size=3.><b>Illustration of sensor coordinate systems</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 5. Illustration of sensor coordinate systems</b></font></p>
 
 *    The difference between rotation_y and alpha are, that rotation_y is directly given in camera coordinates, while alpha also considers the vector from the camera center to the object center, to compute the relative orientation of the object with respect to the camera. For example, a car  which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0,  no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when  this object is located along the Z-axis of the camera. When moving the car away from the Z-axis, the observation angle will change.
 
@@ -300,14 +300,14 @@ We separately counted the number of instances for each category in the Dual-Rada
 <div align=center>
 <img src="./imgs/weather.png" width="500" height="320" />
 </div>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 5. Distribution of weather conditions.</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 6. Distribution of weather conditions.</b></font></p>
 
 About two-thirds of our data were collected under normal weather conditions, and about one-third were collected under rainy and cloudy conditions. We collected 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
 
 <div align=center>
 <img src="./imgs/class_show.png"/>
 </div>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 6. Distribution of instance conditions.</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 7. Distribution of instance conditions.</b></font></p>
 We also conducted a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Fig. Most objects are within 60 meters of our ego vehicle. 
 # Ⅶ. Getting Started
 
