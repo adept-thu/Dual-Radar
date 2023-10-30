@@ -308,6 +308,7 @@ About two-thirds of our data are collected under normal weather conditions, and 
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 7. Distribution of instance conditions.</b></font></p>
 We also conduct a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Fig. Most objects are within 60 meters of our ego vehicle. 
+
 # Ⅶ. Getting Started
 
 ### Environment
