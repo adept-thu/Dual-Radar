@@ -43,7 +43,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 <p align="center"><font face="Helvetica" size=3.><b>Figure 2. Sensor Configuration and Coordinate Systems</b></font></p>
 
 
-* The specification of the autonomous vehicle system platform
+* The specification of the autonomous vehicle system platform. Our proposed dataset is collected from a high-resolution camera, an 80-line mechanical LiDAR, and two types of 4D radars, the Arbe Phoenix and the ARS548 RDI radar. Our dataset provides GPS information for timing implementation. The sensor configurations are shown in Table 1.
 
 <div align=center>
 <p align="center"><font face="Helvetica" size=3.><b>Table 1. The specification of the autonomous vehicle system platform</b></font></p>
@@ -109,9 +109,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 </table>
 </div>
 
-  Our proposed dataset is collected from a high-resolution camera, an 80-line mechanical LiDAR, and two types of 4D radars, the Arbe Phoenix and the ARS548 RDI radar. Our dataset provides GPS information for timing implementation. The sensor configurations are shown in Table 1.
-
-* The statistics of number of points cloud per frame
+* The statistics of number of points cloud per frame. In addition,we analyze the distribution density of the point clouds and the number of point clouds per frame, as shown in Table 2.
 
 <div align=center>
 <p align="center"><font face="Helvetica" size=3.><b>Table 2. The statistics of number of points cloud per frame</b></font></p>
@@ -142,11 +140,10 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
      </tr>
 </table>
 </div>
-  In addition,we analyze the distribution density of the point clouds and the number of point clouds per frame, as shown in Table 2.
 
 # Ⅱ. Data Acquisition Scenario
 
-The visualization of raw data collected under different weather conditions and the visualization of annotated 3D bounding boxes are performed separately. The three types of data(Lidar, Arbe and Ars548) are transformed onto a unified coordinate system.
+* The visualization of raw data collected under different weather conditions and the visualization of annotated 3D bounding boxes are performed separately. The three types of data(Lidar, Arbe and Ars548) are transformed onto a unified coordinate system.
 <div align=center>
 <table class="table-noborder" align=center>
   <tr>
