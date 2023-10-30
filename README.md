@@ -142,11 +142,11 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
      </tr>
 </table>
 </div>
-  In addition,we analyzed the distribution density of the point clouds and the number of point clouds per frame, as shown in Table 2.
+  In addition,we analyze the distribution density of the point clouds and the number of point clouds per frame, as shown in Table 2.
 
 # Ⅱ. Data Acquisition Scenario
 
-The visualization of raw data collected under different weather conditions and the visualization of annotated 3D bounding boxes were performed separately. The three types of data(Lidar, Arbe and Ars548) were transformed onto a unified coordinate system.
+The visualization of raw data collected under different weather conditions and the visualization of annotated 3D bounding boxes are performed separately. The three types of data(Lidar, Arbe and Ars548) are transformed onto a unified coordinate system.
 <div align=center>
 <table class="table-noborder" align=center>
   <tr>
@@ -210,8 +210,7 @@ The visualization of raw data collected under different weather conditions and t
     │  ├─training_robosense.zip
     └─README_dual_radar.txt
 ```
-This folder contained 10007 frames of labeled pointclouds and image data. The structure of the 
-foler is shown as blow:
+This folder contained 10007 frames of labeled pointclouds and image data. The structure of the folder is shown as blow:
 ```
     └─Dual Radar
     ├─ImageSets
@@ -285,9 +284,9 @@ foler is shown as blow:
   1        score              Only for results: Float,indicating confidence in detection, needed for p/r curves , higher is better.
   1        track_id           Path tracking of the same object
  ```
-* Since the labeling work was done in label coordinate, the bounding box out of the image FOV(1920×1080) needs to be cut.
+* Since the labeling work is done in label coordinate, the bounding box out of the image FOV(1920×1080) needs to be cut.
 
-* location mean the xyz in label coordinate. the same coordinate origen and the relation of axis is shown below.
+* Location mean the xyz in label coordinate. the same coordinate origen and the relation of axis is shown below.
 <p align="center">
   <img src = "./imgs/coordinate.png" width="60%">
 </p>
@@ -296,24 +295,24 @@ foler is shown as blow:
 *    The difference between rotation_y and alpha are, that rotation_y is directly given in camera coordinates, while alpha also considers the vector from the camera center to the object center, to compute the relative orientation of the object with respect to the camera. For example, a car  which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0,  no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when  this object is located along the Z-axis of the camera. When moving the car away from the Z-axis, the observation angle will change.
 
 # Ⅵ. Data statistics
-We separately counted the number of instances for each category in the Dual-Radar dataset and the distribution of different types of weather.
+We separately count the number of instances for each category in the Dual-Radar dataset and the distribution of different types of weather.
 <div align=center>
 <img src="./imgs/weather.png" width="500" height="320" />
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 6. Distribution of weather conditions.</b></font></p>
 
-About two-thirds of our data were collected under normal weather conditions, and about one-third were collected under rainy and cloudy conditions. We collected 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
+About two-thirds of our data are collected under normal weather conditions, and about one-third were collected under rainy and cloudy conditions. We collect 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
 
 <div align=center>
 <img src="./imgs/class_show.png"/>
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 7. Distribution of instance conditions.</b></font></p>
-We also conducted a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Fig. Most objects are within 60 meters of our ego vehicle. 
+We also conduct a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Fig. Most objects are within 60 meters of our ego vehicle. 
 # Ⅶ. Getting Started
 
 ### Environment
 This is the documentation for how to use our detection frameworks with Dual-Radar dataset.
-We tested the Dual-Radar detection frameworks on the following environment:
+We test the Dual-Radar detection frameworks on the following environment:
 
 * Python 3.8.16 (3.10+ does not support open3d.)
 * Ubuntu 18.04/20.04
@@ -1347,7 +1346,6 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 * Thanks for the sensor support provided by Beijing Jingwei Hirain Technologies Co., Inc.
 # Ⅹ. Citation
 * If you find this work is useful for your research, please consider citing:
-
 ```
 @article{zhang2023dual,
   title={Dual Radar: A Multi-modal Dataset with Dual 4D Radar for Autononous Driving},
