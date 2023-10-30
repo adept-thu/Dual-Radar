@@ -191,7 +191,7 @@ The visualization of raw data collected under different weather conditions and t
 * Our dataset is freely available to researchers. Please download and sign our [agreement](https://docs.google.com/document/d/1YwUAnU3aUezIsp2i0Aog2FagoHvbCmyn/edit?usp=sharing&ouid=113489683910089362811&rtpof=true&sd=true) and send it to the provided email address (<b>lwang_hit@hotmail.com</b>). You will receive the download link within one week.
 
 * When unzipping the data, please file and organize it by following the format below:
-
+```
     └─Dual Radar
     ├─ImageSets.zip
     ├─testing
@@ -209,9 +209,10 @@ The visualization of raw data collected under different weather conditions and t
     │  ├─training_label.zip
     │  ├─training_robosense.zip
     └─README_dual_radar.txt
+```
 This folder contained 10007 frames of labeled pointclouds and image data. The structure of the 
 foler is shown as blow:
-
+```
     └─Dual Radar
     ├─ImageSets
     │      test.txt
@@ -257,23 +258,20 @@ foler is shown as blow:
     │  │      000000.bin
     │  │      ...............
     └─README.txt
-
+```
 # Ⅳ. The Description of Calib Format:
 
 * The calib.txt contains tree parts. The dataset consists of two parts: the data part and the alignment calibration file. The data part is image data in png format and point cloud data in bin format. The alignment calibration file includes calibration parameters for the four sensors. The camera-LiDAR, camera-4D radar joint calibration are shown here as examples for illustration.
-
-
+```
 	Dual Radar_cam.Intrinsics.RadialDistortion: Barrel distortion of Dual Radar_cam [ k1, k2, k3 ]
 	Dual Radar_cam.Intrinsics.TangentialDistortion: radial distortion of Dual Radar_cam [ p1, p2 ]
 	Dual Radar_cam.IntrinsicMatrix: Dual Radar_cam's intrinsic matrix [ af, 0, 0; 0, bf, 0; u, v, 1]
 	Dual Radar_LiDAR-->Dual Radar_cam: Dual Radar_lidar to Dual Radar cam's single response matrix P(4×4)
 	Dual Radar_radar--> Dual Radar_cam: Dual Radar_radar to Dual Radar_cam rotation matrix + translation matrix P(3×4)
-
-
-
+```
 # Ⅴ. Label Files Discription:
 * <b>All values (numerical or strings) are separated via spaces, each row corresponds to one object. The 19 columns represent:</b>
-
+```
          Value       Name             Description
          -------------------------------------------------------------------------------------------------------
          1        type               Describes the type of object: 'Car', 'Van', 'Truck', 'Pedestrian',  'Person_sitting', 'Cyclist', 'Tram', 'Misc' or 'DonCare'
@@ -286,7 +284,7 @@ foler is shown as blow:
          1        rotation_y         Rotation ry around Y-axis in camera coordinates [-pi..pi].
          1        score              Only for results: Float,indicating confidence in detection, needed for p/r curves , higher is better.
          1        track_id           Path tracking of the same object
- 
+ ```
 * Since the labeling work was done in label coordinate, the bounding box out of the image FOV(1920×1080) needs to be cut.
 
 * location mean the xyz in label coordinate. the same coordinate origen and the relation of axis is shown below.
@@ -329,18 +327,16 @@ We tested the Dual-Radar detection frameworks on the following environment:
 
 
 * Organize your code structure as follows
-
-
+```
     Frameworks
       ├── checkpoints
       ├── data
       ├── docs
       ├── pcdet
       ├── output
-
+```
 * Organize the dataset according to the following file structure
-
-
+```
     dual_radar
       ├── lidar
         ├── ImageSets
@@ -387,8 +383,7 @@ We tested the Dual-Radar detection frameworks on the following environment:
             ├── calib
             ├── image_2
             ├── ars548
-	
-
+```
 ### Requirements
 
 * Clone the repository
