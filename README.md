@@ -35,7 +35,7 @@
 
 ### Sensor Configuration 
 
-Our ego vehicle’s configuration and the coordinate relationships between multiple sensors are shown in Figure. 2. The platform of our ego vehicle system consists of a highresolution camera, a new 80-line LiDAR, and two types of 4D radar. All sensors have been carefully calibrated. The camera and LiDAR are mounted directly above the ego vehicle, while the 4D radars are installed in front of it. Due to the range of horizontal view limitations of the camera and 4D radars, we only collect data from the front of our ego vehicle for annotation. The ARS548 RDI captures data within approximately 120° horizontal field of view and 28° vertical field of view in front of the ego vehicle, while the Arbe Phoenix, operating in middle-range mode, collects data within a 100° horizontal field of view and 30° vertical field of view. The LiDAR collects around the ego vehicle in a 360° manner but only retains the data in the approximate 120° field of view in front of it for annotation. 
+Our ego vehicle’s configuration and the coordinate relationships between multiple sensors are shown in Figure. 2. The platform of our ego vehicle system consists of a high-resolution camera, an new 80-line LiDAR, and two types of 4D radar. All sensors have been carefully calibrated. The camera and LiDAR are mounted directly above the ego vehicle, while the 4D radars are installed in front of it. Due to the range of horizontal view limitations of the camera and 4D radars, we only collect data from the front of our ego vehicle for annotation. The ARS548 RDI captures data within approximately 120° horizontal field of view and 28° vertical field of view in front of the ego vehicle, while the Arbe Phoenix, operating in middle-range mode, collects data within a 100° horizontal field of view and 30° vertical field of view. The LiDAR collects around the ego vehicle in a 360° manner but only retains the data in the approximate 120° field of view in front of it for annotation. 
 
 <div align=center>
 <img src="./imgs/ego_config_final.png"  width="500" height="300"/>
@@ -286,7 +286,7 @@ This folder contains 10007 frames of labeled pointclouds and image data. The str
  ```
 * Since the labeling work is done in label coordinate, the bounding box out of the image FOV(1920×1080) needs to be cut.
 
-* Location mean the xyz in label coordinate. the same coordinate origen and the relation of axis is shown below.
+* Location mean the xyz in label coordinate. The same coordinate origen and the relation of axis is shown below.
 <p align="center">
   <img src = "./imgs/coordinate.png">
 </p>
@@ -295,19 +295,18 @@ This folder contains 10007 frames of labeled pointclouds and image data. The str
 *    The difference between rotation_y and alpha are, that rotation_y is directly given in camera coordinates, while alpha also considers the vector from the camera center to the object center, to compute the relative orientation of the object with respect to the camera. For example, a car  which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0,  no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when  this object is located along the Z-axis of the camera. When moving the car away from the Z-axis, the observation angle will change.
 
 # Ⅵ. Data Statistics
-We separately count the number of instances for each category in the Dual-Radar dataset and the distribution of different types of weather.
 <div align=center>
 <img src="./imgs/weather.png" width="500" height="320" />
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 6. Distribution of weather conditions.</b></font></p>
 
-About two-thirds of our data are collected under normal weather conditions, and about one-third are collected under rainy and cloudy conditions. We collect 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
+* We separately count the number of instances for each category in the Dual-Radar dataset and the distribution of different types of weather. About two-thirds of our data are collected under normal weather conditions, and about one-third are collected under rainy and cloudy conditions. We collect 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
 
 <div align=center>
 <img src="./imgs/class_show.png"/>
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 7. Distribution of instance conditions.</b></font></p>
-We also conduct a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Figure 7. Most objects are within 60 meters of our ego vehicle. 
+* We also conduct a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Figure 7. Most objects are within 60 meters of our ego vehicle. 
 
 # Ⅶ. Getting Started
 
