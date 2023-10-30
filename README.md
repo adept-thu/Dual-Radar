@@ -321,7 +321,7 @@ We test the Dual-Radar detection frameworks on the following environment:
 * CUDA 11.3
 * opencv 4.2.0.32
 
-### Preparing the Dataset
+### Preparing The Dataset
 
 * After all files are downloaded, please arrange the workspace directory with the following structure:
 
