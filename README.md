@@ -32,7 +32,7 @@
     </td>
   </tr>
 </table>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 1. Data collection vehicle operation and data projection visualization</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 1. Data collection vehicle and data projection visualization</b></font></p>
 </div>
 
 ### Sensor Configuration 
