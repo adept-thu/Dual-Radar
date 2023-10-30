@@ -9,7 +9,7 @@
 
 [2023.10.15] Our code and data are still being maintained and will be released soon.
 
-# Ⅰ.Introduction
+# 1.Introduction
 `Dual-Radar` is a new dataset based on 4D radar that can be used for studies on 3D object detection and tracking in the field of autonomous driving. The perception system of ego vehicle includes a high-resolution camera, a 80-line LiDAR and two up-to-date and different models of 4D radars operating in different modes(Arbe and ARS548). The dataset comprises of raw data collected from ego vehicle, including scenarios such as urban and tunnels, with weather conditions of rainy, cloudy, sunny and so on. Our dataset also includes data from different time periods, including dusk, nighttime, and daytime. Our collected raw data amounts to a total of 12.5 hours, encompassing a total distance of over 600 kilometers. Our dataset covers a route distance of approximately 50 kilometers. It consists of 151 continuous time sequences, with the majority being 20-second sequences, resulting in a total of 10,007 carefully time-synchronized frames.
 
 
@@ -141,7 +141,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 </table>
 </div>
 
-# Ⅱ. Data Acquisition Scenario
+# 2. Data Acquisition Scenario
 
 * The visualization of raw data collected under different weather conditions and the visualization of annotated 3D bounding boxes are performed separately. The three types of data(Lidar, Arbe and Ars548) are transformed onto a unified coordinate system.
 <div align=center>
@@ -184,7 +184,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 <p  align="left"><font face="Helvetica" size=3.><b>Figure 4. Visualization of 3D bounding box projection on data. </b> The first column represents the 3D frame markers on the image. The Column 2, 3, and 4 represent the point cloud from Lidar, Arbe Phoenix radar point cloud, and ARS548 RDI radar point cloud, respectively. Each row represents a scenario type.(a): downtown daytime normal light. (b): downtown daytime backlight. (c): downtown dusk normal light. (d): downtown dusk backlight. (e): downtown clear night. (f): downtown daytime cloudy. (g): downtown rainy day. (h): downtown cloudy dusk. (i): downtown cloudy night. (j): downtown rainy night. (k): daytime tunnel. (l): nighttime tunnel.
 </font></p>
 
-# Ⅲ. Download Link
+# 3. Download Link
 * Our dataset is freely available to researchers. Please download and sign our [agreement](https://docs.google.com/document/d/1YwUAnU3aUezIsp2i0Aog2FagoHvbCmyn/edit?usp=sharing&ouid=113489683910089362811&rtpof=true&sd=true) and send it to the provided email address (<b>lwang_hit@hotmail.com</b>). You will receive the download link within one week.
 
 * When unzipping the data, please file and organize it by following the format below:
@@ -255,7 +255,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
     │  │      ...............
     └─README.txt
 ```
-# Ⅳ. The Description of Calib Format:
+# 4. The Description of Calib Format:
 
 * The calib.txt contains tree parts. The dataset consists of two parts: the data part and the alignment calibration file. The data part is image data in png format and point cloud data in bin format. The alignment calibration file includes calibration parameters for the four sensors. The camera-LiDAR, camera-4D radar joint calibration are shown here as examples for illustration.
 ```
@@ -265,7 +265,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
    Dual Radar_LiDAR-->Dual Radar_cam: Dual Radar_lidar to Dual Radar cam's single response matrix P(4×4)
    Dual Radar_radar--> Dual Radar_cam: Dual Radar_radar to Dual Radar_cam rotation matrix + translation matrix P(3×4)
 ```
-# Ⅴ. Label Files Discription:
+# 5. Label Files Discription:
 * <b>All values (numerical or strings) are separated via spaces, each row corresponds to one object. The 19 columns represent:</b>
 ```
   Value       Name             Description
@@ -291,7 +291,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 
 *    The difference between rotation_y and alpha are, that rotation_y is directly given in camera coordinates, while alpha also considers the vector from the camera center to the object center, to compute the relative orientation of the object with respect to the camera. For example, a car  which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0,  no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when  this object is located along the Z-axis of the camera. When moving the car away from the Z-axis, the observation angle will change.
 
-# Ⅵ. Data Statistics
+# 6. Data Statistics
 <div align=center>
 <img src="./imgs/weather.png" width="500" height="320" />
 </div>
@@ -306,7 +306,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 
 * We also conduct a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Figure 7. Most objects are within 60 meters of our ego vehicle. 
 
-# Ⅶ. Getting Started
+# 7. Getting Started
 
 ### Environment
 This is the documentation for how to use our detection frameworks with Dual-Radar dataset.
@@ -460,7 +460,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     --data_path ${POINT_CLOUD_DATA}
 ```
 
-# Ⅷ. Experimental Results
+# 8. Experimental Results
 <div align=center>
 <p align="center"><font face="Helvetica" size=3.><b>Table 3. Multi-modal experimental results(3D@0.5 0.25 0.25)</b></font></p>
 <table>
@@ -1340,9 +1340,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 </table>
 </div>
 
-# Ⅸ. Acknowledgement
+# 9. Acknowledgement
 * Thanks for the sensor support provided by Beijing Jingwei Hirain Technologies Co., Inc.
-# Ⅹ. Citation
+# 10. Citation
 * If you find this work is useful for your research, please consider citing:
 ```
 @article{zhang2023dual,
