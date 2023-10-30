@@ -294,7 +294,7 @@ This folder contained 10007 frames of labeled pointclouds and image data. The st
 
 *    The difference between rotation_y and alpha are, that rotation_y is directly given in camera coordinates, while alpha also considers the vector from the camera center to the object center, to compute the relative orientation of the object with respect to the camera. For example, a car  which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0,  no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when  this object is located along the Z-axis of the camera. When moving the car away from the Z-axis, the observation angle will change.
 
-# Ⅵ. Data statistics
+# Ⅵ. Data Statistics
 We separately count the number of instances for each category in the Dual-Radar dataset and the distribution of different types of weather.
 <div align=center>
 <img src="./imgs/weather.png" width="500" height="320" />
