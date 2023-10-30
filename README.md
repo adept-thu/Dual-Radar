@@ -288,7 +288,7 @@ This folder contained 10007 frames of labeled pointclouds and image data. The st
 
 * Location mean the xyz in label coordinate. the same coordinate origen and the relation of axis is shown below.
 <p align="center">
-  <img src = "./imgs/coordinate.png" width="60%">
+  <img src = "./imgs/coordinate.png">
 </p>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 5. Illustration of sensor coordinate systems</b></font></p>
 
