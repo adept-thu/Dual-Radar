@@ -210,7 +210,7 @@ The visualization of raw data collected under different weather conditions and t
     │  ├─training_robosense.zip
     └─README_dual_radar.txt
 ```
-This folder contained 10007 frames of labeled pointclouds and image data. The structure of the folder is shown as blow:
+This folder contains 10007 frames of labeled pointclouds and image data. The structure of the folder is shown as blow:
 ```
     └─Dual Radar
     ├─ImageSets
