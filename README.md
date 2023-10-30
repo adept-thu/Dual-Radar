@@ -301,7 +301,7 @@ We separately count the number of instances for each category in the Dual-Radar 
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 6. Distribution of weather conditions.</b></font></p>
 
-About two-thirds of our data are collected under normal weather conditions, and about one-third were collected under rainy and cloudy conditions. We collect 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
+About two-thirds of our data are collected under normal weather conditions, and about one-third are collected under rainy and cloudy conditions. We collect 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
 
 <div align=center>
 <img src="./imgs/class_show.png"/>
