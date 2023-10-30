@@ -2,12 +2,14 @@
   <img src = "./imgs/logo.png" width="60%">
 </p>
 
-# Notice
+# News
+<strong>[2023.10.29] We have released the downloaded link.</strong>
+
+[2023.10.27] Our Code has supported Voxel RCNN, Second, Pointpillars, RDIOU.Other baseline and dataset will be updated soon.
+
 [2023.10.15] Our code and data are still being maintained and will be released soon.
 
-<strong>[2023.10.27] Our Code has supported VoxelRcnn, Second, Pointpillars, RDIOU.Other baseline and dataset will be updated soon.</strong>
-
-
+# Ⅰ. Introduction
 `Dual-Radar` is a brand new dataset based on 4D radar that can be used for studies on deep learning object detection and tracking in the field of autonomous driving. The system of ego vehicle includes a high-resolution camera, a 80-line LiDAR and two up-to-date and different models of 4D radars operating in different modes(Arbe and ARS548). The dataset comprises of raw data collected from ego vehicle, including scenarios such as tunnels and urban, with weather conditions rainy, cloudy and sunny. Our dataset also includes data from different time periods, including dusk, nighttime, and daytime. Our collected raw data amounts to a total of 12.5 hours, encompassing a total distance of over 600 kilometers. Our dataset covers a route distance of approximately 50 kilometers. It consists of 151 continuous time sequences, with the majority being 20-second sequences, resulting in a total of 10,007 carefully time-synchronized frames.
 
 
@@ -16,190 +18,29 @@
   <tr>
     <td align="center">
       <figure>
-        <img src="./imgs/5.gif" alt="Image 1" width="350" height="200">
-      </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>a) Data projection visualization</b></font></p>
-    </td>
-    <td align="center">
-      <figure>
         <img src="./imgs/7.gif" alt="Image 1" width="350" height="200">
       </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>b) Ego vehicle's work scenario</b></font></p>
+      <p align="center"><font face="Helvetica" size=2.><b>a) Ego vehicle's work scenario</b></font></p>
+    </td>
+    <td align="center">
+      <figure>
+        <img src="./imgs/5.gif" alt="Image 1" width="350" height="200">
+      </figure>
+      <p align="center"><font face="Helvetica" size=2.><b>b) Data projection visualization</b></font></p>
     </td>
   </tr>
 </table>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 1. Data collection vehicle operation and data projection visualization</b></font></p>
 </div>
 
-# Dual-Radar Dataset
-
-*  <b>Notice</b>: On the left is a color RGB image, while on the right side, the cyan represents the Arbe point cloud, the white represents the LiDAR point cloud, and the yellow represents the ARS548 point cloud.
-<div align=center>
-<table class="table-noborder" align=center>
-  <tr>
-    <td align="center">
-      <figure>
-        <img src="./imgs/1.gif" alt="Image 1" width="400" height="200">
-      </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>a)  Sunny,Daytime</b></font></p>
-    </td>
-    <td align="center">
-      <figure>
-        <img src="./imgs/2.gif" alt="Image 1" width="400" height="200">
-      </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>b)  Sunny,Nightime</b></font></p>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <figure>
-        <img src="./imgs/3.gif" alt="Image 1" width="400" height="200">
-      </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>c)  Rainy,Daytime</b></font></p>
-    </td>
-    <td align="center">
-      <figure>
-        <img src="./imgs/4.gif" alt="Image 1" width="400" height="200">
-      </figure>
-      <p align="center"><font face="Helvetica" size=2.><b>d)  Cloudy,Daytime</b></font></p>
-    </td>
-  </tr>
-</table>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 1. Visualization of raw data sequences under different weather conditions</b></font></p>
-</div>
-
-<div align=left>
-<img src="./imgs/show_finall.png"/>
-</div>
-<p><font face="Helvetica" size=3.><b>Figure 2. Visualization of 3D bounding box projection on data. </b> The first column represents the 3D frame markers on the image, the second column represents the Arbe Phoenix radar point cloud, the third represents column the ARS548 RDI radar point cloud, and the fourth column represents the LiDAR point cloud. Each row represents a scenario type (includes downtown daytime normal light, downtown daytime backlight, downtown clear night, downtown dusk backlight, downtown clear night and downtown daytime cloudy).</font></p>
-
-# Download Link
-The URLs listed below are useful for using the `Dual-Radar` dataset and benchmark:
-
-When unzipping the data, please file and organize it by following the format below:
-
-    └─Dual Radar
-    ├─ImageSets.zip
-    ├─testing
-    │  ├─testing_arbe.zip
-    │  ├─testing_ars548.zip
-    │  ├─testing_calib.zip
-    │  ├─testing_image.zip
-    │  ├─testing_label.zip
-    │  ├─testing_robosense.zip
-    ├─training
-    │  ├─training_arbe.zip
-    │  ├─training_ars548.zip
-    │  ├─training_calib.zip
-    │  ├─training_image.zip
-    │  ├─training_label.zip
-    │  ├─training_robosense.zip
-    └─README_dual_radar.txt
-This folder contained 10007 frames of labeled pointclouds and image data. The structure of the 
-foler is shown as blow:
-
-    └─Dual Radar
-    ├─ImageSets
-    │      test.txt
-    │      train.txt
-    │      trainval.txt
-    │      val.txt
-    ├─testing
-    │  ├─arbe
-    │  │      000000.bin	# Raw pointclouds (removed None) of the Arbe.
-    │  │      ...............
-    │  ├─ars548
-    │  │      000000.bin	# Raw pointclouds (removed None) of the ARS548.
-    │  │      ...............
-    │  ├─calib
-    │  │      000000.txt
-    │  │      ...............
-    │  ├─image
-    │  │      000000.png	# Undistort images of the camera.
-    │  │      ...............
-    │  ├─label
-    │  │      000000.txt	# Label in txt format, explain later.
-    │  │      ...............
-    │  ├─robosense
-    │  │      000000.bin	# Raw pointclouds (removed None) of the LiDAR.
-    │  │      ...............
-    ├─training
-    │  ├─arbe
-    │  │      000000.bin
-    │  │      ...............
-    │  ├─ars548
-    │  │      000000.bin
-    │  │      ...............
-    │  ├─calib
-    │  │      000000.txt
-    │  │      ...............
-    │  ├─image
-    │  │      000000.png
-    │  │      ...............
-    │  ├─label
-    │  │      000000.txt
-    │  │      ...............
-    │  ├─robosense
-    │  │      000000.bin
-    │  │      ...............
-    └─README.txt
-
-# The description of calib format:
-============================================================
-
-The calib.txt contains tree parts. The dataset consists of two parts: the data part and the alignment calibration file. The data part is image data in png format and point cloud data in bin format. The alignment calibration file includes calibration parameters for the four sensors. The camera-LiDAR, camera-4D radar joint calibration are shown here as examples for illustration.
-
-	Dual Radar_cam.Intrinsics.RadialDistortion: Barrel distortion of Dual Radar_cam [ k1, k2, k3 ]
-	Dual Radar_cam.Intrinsics.TangentialDistortion: radial distortion of Dual Radar_cam [ p1, p2 ]
-	Dual Radar_cam.IntrinsicMatrix: Dual Radar_cam's intrinsic matrix [ af, 0, 0; 0, bf, 0; u, v, 1]
-	Dual Radar_LiDAR-->Dual Radar_cam: Dual Radar_lidar to Dual Radar cam's single response matrix P(4×4)
-	Dual Radar_radar--> Dual Radar_cam: Dual Radar_radar to Dual Radar_cam rotation matrix + translation matrix P(3×4)
-
-
-
-# Label files Discription:
-<b>All values (numerical or strings) are separated via spaces, each row corresponds to one object. The 19 columns represent:</b>
-
-         Value       Name             Description
-         -------------------------------------------------------------------------------------------------------
-         1        type               Describes the type of object: 'Car', 'Van', 'Truck', 'Pedestrian',  'Person_sitting', 'Cyclist', 'Tram', 'Misc' or 'DonCare'
-         1        truncated          Float from 0 (non-truncated) to 1 (truncated), where truncated refers to the object leaving image boundaries
-         1        occluded           Integer (0,1,2,3) indicating occlusion state: 0 = fully visible, 1 = partly ccluded, 2 = largely occluded, 3 = unknown
-         1        alpha              Observation angle of object, ranging [-pi..pi]
-         4        bbox               2D bounding box of object in the image (0-based index): contains left, top, right, bottom pixel coordinates. 
-         3        dimensions         3D object dimensions: height, width, length (in meters).
-         3        location           3D object location x,y,z in camera coordinates (in meters).
-         1        rotation_y         Rotation ry around Y-axis in camera coordinates [-pi..pi].
-         1        score              Only for results: Float,indicating confidence in detection, needed for p/r curves , higher is better.
-
-
-*1: Since the labeling work was done in label coordinate, the bounding box out of the image FOV(1920×1080) needs to be cut.
-
-*2: location mean the xyz in label coordinate. the same coordinate origen and the relation of axis is shown below.
-
-         lidar coordinate             label coordinate             Arbe coordinate            ARS548 coordinate
-                  |  z                                                z  |                             z  |    
-                  |                                                      |                                |                 
-                  |                                                      |                                |             
-    x             |                x                                     |            y            x      |            
-       -----------|                ---------| \                          |-----------          -----------|              
-                   \                        |  \                          \                                \
-                    \                       |   \                          \                                \
-                  y  \                  y   |    \                          \                                \
-                                                  z                         x                                 y 
-
-
-
-*3: The difference between rotation_y and alpha are, that rotation_y is directly given in camera coordinates, while alpha also considers the vector from the camera center to the object center, to compute the relative orientation of the object with respect to the camera. For example, a car  which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0,  no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when  this object is located along the Z-axis of the camera. When moving the car away from the Z-axis, the observation angle will change.
-
-
-# Sensor Configuration 
+### Sensor Configuration 
 
 Our ego vehicle’s configuration and the coordinate relationships between multiple sensors are shown in Fig. 3. The platform of our ego vehicle system consists of a highresolution camera, a new 80-line LiDAR, and two types of 4D radar. All sensors have been carefully calibrated. The camera and LiDAR are mounted directly above the ego vehicle, while the 4D radars are installed in front of it. Due to the range of horizontal view limitations of the camera and 4D radars, we only collect data from the front of our ego vehicle for annotation. The ARS548 RDI captures data within approximately 120° horizontal field of view and 28° vertical field of view in front of the ego vehicle, while the Arbe Phoenix, operating in middle-range mode, collects data within a 100° horizontal field of view and 30° vertical field of view. The LiDAR collects around the ego vehicle in a 360° manner but only retains the data in the approximate 120° field of view in front of it for annotation. 
 
 <div align=center>
 <img src="./imgs/ego_config_final.png"  width="500" height="300"/>
 </div>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 3. Sensor Configuration and Coordinate Systems</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 2. Sensor Configuration and Coordinate Systems</b></font></p>
 
 
 * The specification of the autonomous vehicle system platform
@@ -303,22 +144,177 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 </div>
   In addition,we analyzed the distribution density of the point clouds and the number of point clouds per frame, as shown in Table 2.
 
-# Data statistics
+# Ⅱ. Data Acquisition Scenario
+
+The visualization of raw data collected under different weather conditions and the visualization of annotated 3D bounding boxes were performed separately. The three types of data(Lidar, Arbe and Ars548) were transformed onto a unified coordinate system.
+<div align=center>
+<table class="table-noborder" align=center>
+  <tr>
+    <td align="center">
+      <figure>
+        <img src="./imgs/1.gif" alt="Image 1" width="400" height="200">
+      </figure>
+      <p align="center"><font face="Helvetica" size=2.><b>a)  Sunny,Daytime</b></font></p>
+    </td>
+    <td align="center">
+      <figure>
+        <img src="./imgs/2.gif" alt="Image 1" width="400" height="200">
+      </figure>
+      <p align="center"><font face="Helvetica" size=2.><b>b)  Sunny,Nightime</b></font></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <figure>
+        <img src="./imgs/3.gif" alt="Image 1" width="400" height="200">
+      </figure>
+      <p align="center"><font face="Helvetica" size=2.><b>c)  Rainy,Daytime</b></font></p>
+    </td>
+    <td align="center">
+      <figure>
+        <img src="./imgs/4.gif" alt="Image 1" width="400" height="200">
+      </figure>
+      <p align="center"><font face="Helvetica" size=2.><b>d)  Cloudy,Daytime</b></font></p>
+    </td>
+  </tr>
+</table>
+<p align="left"><font face="Helvetica" size=3.><b>Figure 3. Visualization of raw data sequences under different weather conditions. </b>On the left is a color RGB image, while on the right side, the cyan represents the Arbe point cloud, the white represents the LiDAR point cloud, and the yellow represents the ARS548 point cloud.</font></p>
+</div>
+
+<div align=left>
+<img src="./imgs/show_finall.png"/>
+</div>
+<p  align="left"><font face="Helvetica" size=3.><b>Figure 4. Visualization of 3D bounding box projection on data. </b> The first column represents the 3D frame markers on the image. The Column 2, 3, and 4 represent the point cloud from Lidar, Arbe Phoenix radar point cloud, and ARS548 RDI radar point cloud, respectively. Each row represents a scenario type.(a): downtown daytime normal light. (b): downtown daytime backlight. (c): downtown dusk normal light. (d): downtown dusk backlight. (e): downtown clear night. (f): downtown daytime cloudy. (g): downtown rainy day. (h): downtown cloudy dusk. (i): downtown cloudy night. (j): downtown rainy night. (k): daytime tunnel. (l): nighttime tunnel.
+</font></p>
+
+# Ⅲ. Download Link
+* Our dataset is freely available to researchers. Please download and sign our [agreement](https://docs.google.com/document/d/1YwUAnU3aUezIsp2i0Aog2FagoHvbCmyn/edit?usp=sharing&ouid=113489683910089362811&rtpof=true&sd=true) and send it to the provided email address (<b>lwang_hit@hotmail.com</b>). You will receive the download link within one week.
+
+* When unzipping the data, please file and organize it by following the format below:
+
+
+    └─Dual Radar
+    ├─ImageSets.zip
+    ├─testing
+    │  ├─testing_arbe.zip
+    │  ├─testing_ars548.zip
+    │  ├─testing_calib.zip
+    │  ├─testing_image.zip
+    │  ├─testing_label.zip
+    │  ├─testing_robosense.zip
+    ├─training
+    │  ├─training_arbe.zip
+    │  ├─training_ars548.zip
+    │  ├─training_calib.zip
+    │  ├─training_image.zip
+    │  ├─training_label.zip
+    │  ├─training_robosense.zip
+    └─README_dual_radar.txt
+This folder contained 10007 frames of labeled pointclouds and image data. The structure of the 
+foler is shown as blow:
+
+    └─Dual Radar
+    ├─ImageSets
+    │      test.txt
+    │      train.txt
+    │      trainval.txt
+    │      val.txt
+    ├─testing
+    │  ├─arbe
+    │  │      000000.bin	# Raw pointclouds (removed None) of the Arbe.
+    │  │      ...............
+    │  ├─ars548
+    │  │      000000.bin	# Raw pointclouds (removed None) of the ARS548.
+    │  │      ...............
+    │  ├─calib
+    │  │      000000.txt
+    │  │      ...............
+    │  ├─image
+    │  │      000000.png	# Undistort images of the camera.
+    │  │      ...............
+    │  ├─label
+    │  │      000000.txt	# Label in txt format, explain later.
+    │  │      ...............
+    │  ├─robosense
+    │  │      000000.bin	# Raw pointclouds (removed None) of the LiDAR.
+    │  │      ...............
+    ├─training
+    │  ├─arbe
+    │  │      000000.bin
+    │  │      ...............
+    │  ├─ars548
+    │  │      000000.bin
+    │  │      ...............
+    │  ├─calib
+    │  │      000000.txt
+    │  │      ...............
+    │  ├─image
+    │  │      000000.png
+    │  │      ...............
+    │  ├─label
+    │  │      000000.txt
+    │  │      ...............
+    │  ├─robosense
+    │  │      000000.bin
+    │  │      ...............
+    └─README.txt
+
+# Ⅳ. The Description of Calib Format:
+
+* The calib.txt contains tree parts. The dataset consists of two parts: the data part and the alignment calibration file. The data part is image data in png format and point cloud data in bin format. The alignment calibration file includes calibration parameters for the four sensors. The camera-LiDAR, camera-4D radar joint calibration are shown here as examples for illustration.
+
+
+	Dual Radar_cam.Intrinsics.RadialDistortion: Barrel distortion of Dual Radar_cam [ k1, k2, k3 ]
+	Dual Radar_cam.Intrinsics.TangentialDistortion: radial distortion of Dual Radar_cam [ p1, p2 ]
+	Dual Radar_cam.IntrinsicMatrix: Dual Radar_cam's intrinsic matrix [ af, 0, 0; 0, bf, 0; u, v, 1]
+	Dual Radar_LiDAR-->Dual Radar_cam: Dual Radar_lidar to Dual Radar cam's single response matrix P(4×4)
+	Dual Radar_radar--> Dual Radar_cam: Dual Radar_radar to Dual Radar_cam rotation matrix + translation matrix P(3×4)
+
+
+
+# Ⅴ. Label Files Discription:
+* <b>All values (numerical or strings) are separated via spaces, each row corresponds to one object. The 19 columns represent:</b>
+
+         Value       Name             Description
+         -------------------------------------------------------------------------------------------------------
+         1        type               Describes the type of object: 'Car', 'Van', 'Truck', 'Pedestrian',  'Person_sitting', 'Cyclist', 'Tram', 'Misc' or 'DonCare'
+         1        truncated          Float from 0 (non-truncated) to 1 (truncated), where truncated refers to the object leaving image boundaries
+         1        occluded           Integer (0,1,2,3) indicating occlusion state: 0 = fully visible, 1 = partly ccluded, 2 = largely occluded, 3 = unknown
+         1        alpha              Observation angle of object, ranging [-pi..pi]
+         4        bbox               2D bounding box of object in the image (0-based index): contains left, top, right, bottom pixel coordinates. 
+         3        dimensions         3D object dimensions: height, width, length (in meters).
+         3        location           3D object location x,y,z in camera coordinates (in meters).
+         1        rotation_y         Rotation ry around Y-axis in camera coordinates [-pi..pi].
+         1        score              Only for results: Float,indicating confidence in detection, needed for p/r curves , higher is better.
+         1        track_id           Path tracking of the same object
+ 
+* Since the labeling work was done in label coordinate, the bounding box out of the image FOV(1920×1080) needs to be cut.
+
+* location mean the xyz in label coordinate. the same coordinate origen and the relation of axis is shown below.
+<p align="center">
+  <img src = "./imgs/coordinate.png" width="60%">
+</p>
+<p align="center"><font face="Helvetica" size=3.><b>Illustration of sensor coordinate systems</b></font></p>
+
+*    The difference between rotation_y and alpha are, that rotation_y is directly given in camera coordinates, while alpha also considers the vector from the camera center to the object center, to compute the relative orientation of the object with respect to the camera. For example, a car  which is facing along the X-axis of the camera coordinate system corresponds to rotation_y=0,  no matter where it is located in the X/Z plane (bird's eye view), while alpha is zero only, when  this object is located along the Z-axis of the camera. When moving the car away from the Z-axis, the observation angle will change.
+
+# Ⅵ. Data statistics
 We separately counted the number of instances for each category in the Dual-Radar dataset and the distribution of different types of weather.
 <div align=center>
 <img src="./imgs/weather.png" width="500" height="320" />
 </div>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 4. Distribution of weather conditions.</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 5. Distribution of weather conditions.</b></font></p>
 
 About two-thirds of our data were collected under normal weather conditions, and about one-third were collected under rainy and cloudy conditions. We collected 577 frames in rainy weather, which is about 5.5% of the total dataset. The rainy weather data we collect can be used to test the performance of different 4D radars in adverse weather conditions.
 
 <div align=center>
 <img src="./imgs/class_show.png"/>
 </div>
-<p align="center"><font face="Helvetica" size=3.><b>Figure 5. Distribution of instance conditions.</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Figure 6. Distribution of instance conditions.</b></font></p>
 We also conducted a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Fig. Most objects are within 60 meters of our ego vehicle. 
+# Ⅶ. Getting Started
 
-# Environment
+### Environment
 This is the documentation for how to use our detection frameworks with Dual-Radar dataset.
 We tested the Dual-Radar detection frameworks on the following environment:
 
@@ -328,16 +324,13 @@ We tested the Dual-Radar detection frameworks on the following environment:
 * CUDA 11.3
 * opencv 4.2.0.32
 
-## Notice
+### Preparing the Dataset
 
-[2022-09-30] The dataset will provide a link for access to the data for further research as soon as possible.
-
-## Preparing the Dataset
-
-1. After all files are downloaded, please arrange the workspace directory with the following structure:
+* After all files are downloaded, please arrange the workspace directory with the following structure:
 
 
-Organize your code structure as follows
+* Organize your code structure as follows
+
 
     Frameworks
       ├── checkpoints
@@ -346,7 +339,8 @@ Organize your code structure as follows
       ├── pcdet
       ├── output
 
-Organize the dataset according to the following file structure
+* Organize the dataset according to the following file structure
+
 
     dual_radar
       ├── lidar
@@ -396,43 +390,46 @@ Organize the dataset according to the following file structure
             ├── ars548
 	
 
-## Requirements
+### Requirements
 
-1. Clone the repository
+* Clone the repository
 
 ```
  git clone https://github.com/adept-thu/Dual-Radar.git
  cd Dual-Radar
 ```
 
-2. Create a conda environment
+* Create a conda environment
 ```
 conda create -n Dual-Radardet python=3.8.16
 conda activate Dual-Radardet
 ```
 
-3. Install PyTorch (We recommend pytorch 1.10.1.)
+* Install PyTorch (We recommend pytorch 1.10.1.)
 
-4. Install the dependencies
+* Install the dependencies
 ```
 pip install -r requirements.txt
 ```
-5. Install Spconv（our cuda version is 113）
+* Install Spconv（our cuda version is 113）
 ```
 pip install spconv-cu113
 ```
-6. Build packages for Dual-Radardet
+* Build packages for Dual-Radardet
 ```
 python setup.py develop
 ```
 
-## Train & Evaluation
+### Train & Evaluation
 * Generate the data infos by running the following command:
 ```
+using lidar data
 python -m pcdet.datasets.dual_radar.dual_radar_dataset create_dual_radar_infos tools/cfgs/dataset_configs/dual_radar_dataset.yaml
-# or you want to use arbe data
+
+using arbe data
 python -m pcdet.datasets.dual_radar.dual_radar_dataset_arbe create_dual_radar_infos tools/cfgs/dataset_configs/dual_radar_dataset_arbe.yaml
-# or ars548
+
+using ars548 data
 python -m pcdet.datasets.dual_radar.dual_radar_dataset_ars548 create_dual_radar_infos tools/cfgs/dataset_configs/dual_radar_dataset_ars548.yaml
 ```
 * To train the model on single GPU, prepare the total dataset and run
@@ -452,7 +449,7 @@ python test.py --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE} --ckpt ${CKP
 sh scripts/dist_test.sh ${NUM_GPUS} \
     --cfg_file ${CONFIG_FILE} --batch_size ${BATCH_SIZE}
 ```
-## Quick Demo
+### Quick Demo
 Here we provide a quick demo to test a pretrained model on the custom point cloud data and visualize the predicted results
 * Download the pretrained model as shown in Table 4~8.
 * Make sure you have installed the Open3d and mayavi visualization tools. If not, you could install it as follow: 
@@ -472,9 +469,9 @@ python demo.py --cfg_file ${CONFIG_FILE} \
     --data_path ${POINT_CLOUD_DATA}
 ```
 
-## Experimental Results
+# Ⅷ. Experimental Results
 <div align=center>
-<p align="center"><font face="Helvetica" size=3.><b>Table 3. Multimodal Experimental Results(3D@0.5 0.25 0.25)</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 3. Multi-modal experimental results(3D@0.5 0.25 0.25)</b></font></p>
 <table>
      <tr align=center>
         <td rowspan="3">Baseline</td> 
@@ -541,7 +538,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td><a href="https://pan.baidu.com/s/1W3O5OfmFLxcyYMSgZjKg7Q?pwd=8888">model</a></td>
     </tr>
     <tr align=center>
-        <td rowspan="3">M2Fusion</td> 
+        <td rowspan="3">M<sup>2</sup>-Fusion</td> 
         <td>LiDAR+Arbe</td>
         <td>89.71</td>
         <td>79.70</td>
@@ -572,7 +569,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 
 
 <div align=center>
-<p align="center"><font face="Helvetica" size=3.><b>Table 4. Multimodal Experimental Results(BEV@0.5 0.25 0.25)</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 4. Multi-modal experimental results(BEV@0.5 0.25 0.25)</b></font></p>
 <table>
      <tr align=center>
         <td rowspan="3">Baseline</td> 
@@ -639,7 +636,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td><a href="https://pan.baidu.com/s/1W3O5OfmFLxcyYMSgZjKg7Q?pwd=8888">model</a></td>
     </tr>
     <tr align=center>
-        <td rowspan="3">M2Fusion</td> 
+        <td rowspan="3">M<sup>2</sup>-Fusion</td> 
         <td>LiDAR+Arbe</td>
         <td>90.91</td>
         <td>85.73</td>
@@ -672,7 +669,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 
 
 <div align=center>
-<p align="center"><font face="Helvetica" size=3.><b>Table 5. Single modity Experimental Results(3D@0.5 0.25 0.25)</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 5. Single-modal experimental results(3D@0.5 0.25 0.25)</b></font></p>
 <table>
      <tr align=center>
         <td rowspan="3">Baseline</td> 
@@ -903,7 +900,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 
 
 <div align=center>
-<p align="center"><font face="Helvetica" size=3.><b>Table 6. Single modity Experimental Results(BEV@0.5 0.25 0.25)</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 6. Single-modal experimental results(BEV@0.5 0.25 0.25)</b></font></p>
 <table>
      <tr align=center>
         <td rowspan="3">Baseline</td> 
@@ -1133,7 +1130,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 </div>
 
 <div align=center>
-<p align="center"><font face="Helvetica" size=3.><b>Table 7. Single modity Experimental Results in the rainy scenario(3D@0.5 0.25 0.25)</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 7. Single-modal experimental results in the rainy scenario(3D@0.5 0.25 0.25)</b></font></p>
 <table>
      <tr align=center>
         <td rowspan="3">Baseline</td> 
@@ -1243,7 +1240,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 </div>
 
 <div align=center>
-<p align="center"><font face="Helvetica" size=3.><b>Table 8. Single modity Experimental Results(BEV@0.5 0.25 0.25) in the rainy scenario</b></font></p>
+<p align="center"><font face="Helvetica" size=3.><b>Table 8. Single-modal experimental results(BEV@0.5 0.25 0.25) in the rainy scenario</b></font></p>
 <table>
      <tr align=center>
         <td rowspan="3">Baseline</td> 
@@ -1352,14 +1349,10 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 </table>
 </div>
 
-
-## License
-The `Dual-Radar` dataset is published under the CC BY-NC-ND License, and all codes are published under the Apache License 2.0.
-
-## Acknowledgement
-
-## Citation
-If you find this work is useful for your research, please consider citing:
+# Ⅸ. Acknowledgement
+* Thanks for the sensor support provided by Beijing Jingwei Hirain Technologies Co., Inc.
+# Ⅹ. Citation
+* If you find this work is useful for your research, please consider citing:
 
 ```
 @article{zhang2023dual,
