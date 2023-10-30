@@ -207,7 +207,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
     │  ├─training_robosense.zip
     └─README_dual_radar.txt
 ```
-This folder contains 10007 frames of labeled pointclouds and image data. The structure of the folder is shown as blow:
+* This folder contains 10007 frames of labeled pointclouds and image data. The structure of the folder is shown as blow:
 ```
     └─Dual Radar
     ├─ImageSets
@@ -303,6 +303,7 @@ This folder contains 10007 frames of labeled pointclouds and image data. The str
 <img src="./imgs/class_show.png"/>
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 7. Distribution of instance conditions.</b></font></p>
+
 * We also conduct a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Figure 7. Most objects are within 60 meters of our ego vehicle. 
 
 # Ⅶ. Getting Started
@@ -686,7 +687,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>Hard</td>
     </tr>
     <tr align=center>
-        <td rowspan="3">pointpillars</td> 
+        <td rowspan="3">Pointpillars</td> 
         <td>LiDAR</td>
         <td>81.78</td>
         <td>55.40</td>
@@ -917,7 +918,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>Hard</td>
     </tr>
     <tr align=center>
-        <td rowspan="3">pointpillars</td> 
+        <td rowspan="3">Pointpillars</td> 
         <td>LiDAR</td>
         <td>81.81</td>
         <td>55.49</td>
@@ -1147,7 +1148,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>Hard</td>
     </tr>
     <tr align=center>
-        <td rowspan="3">pointpillars</td> 
+        <td rowspan="3">Pointpillars</td> 
         <td>LiDAR</td>
         <td>60.57</td>
         <td>44.31</td>
@@ -1257,7 +1258,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
         <td>Hard</td>
     </tr>
     <tr align=center>
-        <td rowspan="3">pointpillars</td> 
+        <td rowspan="3">Pointpillars</td> 
         <td>LiDAR</td>
         <td>60.57</td>
         <td>44.56</td>
