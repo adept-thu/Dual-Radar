@@ -35,7 +35,7 @@
 
 ### Sensor Configuration 
 
-Our ego vehicle’s configuration and the coordinate relationships between multiple sensors are shown in Fig. 3. The platform of our ego vehicle system consists of a highresolution camera, a new 80-line LiDAR, and two types of 4D radar. All sensors have been carefully calibrated. The camera and LiDAR are mounted directly above the ego vehicle, while the 4D radars are installed in front of it. Due to the range of horizontal view limitations of the camera and 4D radars, we only collect data from the front of our ego vehicle for annotation. The ARS548 RDI captures data within approximately 120° horizontal field of view and 28° vertical field of view in front of the ego vehicle, while the Arbe Phoenix, operating in middle-range mode, collects data within a 100° horizontal field of view and 30° vertical field of view. The LiDAR collects around the ego vehicle in a 360° manner but only retains the data in the approximate 120° field of view in front of it for annotation. 
+Our ego vehicle’s configuration and the coordinate relationships between multiple sensors are shown in Figure. 2. The platform of our ego vehicle system consists of a highresolution camera, a new 80-line LiDAR, and two types of 4D radar. All sensors have been carefully calibrated. The camera and LiDAR are mounted directly above the ego vehicle, while the 4D radars are installed in front of it. Due to the range of horizontal view limitations of the camera and 4D radars, we only collect data from the front of our ego vehicle for annotation. The ARS548 RDI captures data within approximately 120° horizontal field of view and 28° vertical field of view in front of the ego vehicle, while the Arbe Phoenix, operating in middle-range mode, collects data within a 100° horizontal field of view and 30° vertical field of view. The LiDAR collects around the ego vehicle in a 360° manner but only retains the data in the approximate 120° field of view in front of it for annotation. 
 
 <div align=center>
 <img src="./imgs/ego_config_final.png"  width="500" height="300"/>
@@ -307,7 +307,7 @@ About two-thirds of our data are collected under normal weather conditions, and 
 <img src="./imgs/class_show.png"/>
 </div>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 7. Distribution of instance conditions.</b></font></p>
-We also conduct a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Fig. Most objects are within 60 meters of our ego vehicle. 
+We also conduct a statistical analysis of the number of objects with each label at different distance ranges from our vehicle, as shown in Figure 7. Most objects are within 60 meters of our ego vehicle. 
 
 # Ⅶ. Getting Started
 
