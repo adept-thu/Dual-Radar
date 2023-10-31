@@ -187,7 +187,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 </font></p>
 
 # 3. Download Link
-* Our dataset is freely available to researchers. Please download and sign our [agreement](https://docs.google.com/document/d/1YwUAnU3aUezIsp2i0Aog2FagoHvbCmyn/edit?usp=sharing&ouid=113489683910089362811&rtpof=true&sd=true) and send it to the provided email address (<b>lwang_hit@hotmail.com</b>). You will receive the download link within one week.
+* Our dataset is freely available to researchers. Please download and sign our [agreement](https://docs.google.com/document/d/1ZZ_Y_BujAx24jG64u6OyAKtupmZ1QTWN/edit?usp=sharing&ouid=113489683910089362811&rtpof=true&sd=true) and send it to the provided email address (<b>lwang_hit@hotmail.com</b>). You will receive the download link within one week.
 
 * When unzipping the data, please file and organize it by following the format below:
 ```
@@ -257,7 +257,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
     │  │      ...............
     └─README.txt
 ```
-# 4. The Description of Calib Format:
+# 4. The Description of Calib Format
 
 * The calib.txt contains tree parts. The dataset consists of two parts: the data part and the alignment calibration file. The data part is image data in png format and point cloud data in bin format. The alignment calibration file includes calibration parameters for the four sensors. The camera-LiDAR, camera-4D radar joint calibration are shown here as examples for illustration.
 ```
@@ -267,7 +267,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
    Dual Radar_LiDAR-->Dual Radar_cam: Dual Radar_lidar to Dual Radar cam's single response matrix P(4×4)
    Dual Radar_radar--> Dual Radar_cam: Dual Radar_radar to Dual Radar_cam rotation matrix + translation matrix P(3×4)
 ```
-# 5. Label Files Discription:
+# 5. Label Files Discription
 * <b>All values (numerical or strings) are separated via spaces, each row corresponds to one object. The 19 columns represent:</b>
 ```
   Value       Name             Description
