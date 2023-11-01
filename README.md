@@ -345,12 +345,12 @@ We test the Dual-Radar detection frameworks on the following environment:
             ├── test.txt
         ├── training
             ├── calib
-            ├── image_2
-            ├── label_2
+            ├── image
+            ├── label
             ├── velodyne
         ├── testing
             ├── calib
-            ├── image_2
+            ├── image
             ├── velodyne
       ├── radar_arbe
         ├── ImageSets
@@ -360,12 +360,12 @@ We test the Dual-Radar detection frameworks on the following environment:
             ├── test.txt
         ├── training
             ├── calib
-            ├── image_2
-            ├── label_2
+            ├── image
+            ├── label
             ├── arbe
         ├── testing
             ├── calib
-            ├── image_2
+            ├── image
             ├── arbe
       ├── radar_ars548
         ├── ImageSets
@@ -375,12 +375,12 @@ We test the Dual-Radar detection frameworks on the following environment:
             ├── test.txt
         ├── training
             ├── calib
-            ├── image_2
-            ├── label_2
+            ├── image
+            ├── label
             ├── ars548
         ├── testing
             ├── calib
-            ├── image_2
+            ├── image
             ├── ars548
 ```
 ### Requirements
