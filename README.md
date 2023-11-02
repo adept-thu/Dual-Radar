@@ -1349,7 +1349,7 @@ python demo.py --cfg_file ${CONFIG_FILE} \
 ```
 @article{zhang2023dual,
   title={Dual Radar: A Multi-modal Dataset with Dual 4D Radar for Autononous Driving},
-  author={Zhang, Xinyu and Wang, Li and Chen, Jian and Fang, Cheng and Yang, Lei and Song, Ziying and Yang, Guangqi and Wang, Yichen and Zhang, Xiaofei and Yan,Qingshan and Li, Jun},
+  author={Zhang, Xinyu and Wang, Li and Chen, Jian and Fang, Cheng and Yang, Lei and Song, Ziying and Yang, Guangqi and Wang, Yichen and Zhang, Xiaofei and Yang,Qingshan and Li, Jun},
   journal={arXiv preprint arXiv:2310.07602},
   year={2023}
 }
