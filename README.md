@@ -6,7 +6,7 @@
 <p align="center"><font face="Helvetica" size=20.><b>Paper: (https://arxiv.org/pdf/2310.07602.pdf)</b></font></p>
 
 # News
-<strong>[2023.10.29]  We have released the dataset download link. </strong> 
+<strong>[2023.10.29]  We have released the dataset download [link]((#downloadlink)). </strong> 
 
 [2023.10.27] Our Code currently supports some baselines including Voxel RCNN, Second, Pointpillars, RDIOU. Other baselines will be updated soon.
 
@@ -189,6 +189,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 <p  align="left"><font face="Helvetica" size=3.><b>Figure 4. Visualization of 3D bounding box projection on data. </b> The first column represents the 3D frame markers on the image. The Column 2, 3, and 4 represent the point cloud from Lidar, Arbe Phoenix radar point cloud, and ARS548 RDI radar point cloud, respectively. Each row represents a scenario type.(a): downtown daytime normal light. (b): downtown daytime backlight. (c): downtown dusk normal light. (d): downtown dusk backlight. (e): downtown clear night. (f): downtown daytime cloudy. (g): downtown rainy day. (h): downtown cloudy dusk. (i): downtown cloudy night. (j): downtown rainy night. (k): daytime tunnel. (l): nighttime tunnel.
 </font></p>
 
+<a id="downloadlink"></a>
 # 3. Download Link
 * Our dataset is freely available to researchers. Please download and sign our [agreement](https://docs.google.com/document/d/1ZZ_Y_BujAx24jG64u6OyAKtupmZ1QTWN/edit?usp=sharing&ouid=113489683910089362811&rtpof=true&sd=true) and send it to the provided email address (<b>lwang_hit@hotmail.com</b>). You will receive the download link within one week.
 
