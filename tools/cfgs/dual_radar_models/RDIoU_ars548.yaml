@@ -1,4 +1,4 @@
-CLASS_NAMES: ['Car', 'Pedestrian', 'Bicycle']
+CLASS_NAMES: ['Car', 'Pedestrian', 'Cyclist']
 
 DATA_CONFIG: 
     _BASE_CONFIG_: cfgs/dataset_configs/dual_radar_dataset_ars548.yaml
@@ -60,7 +60,7 @@ MODEL:
                 'unmatched_threshold': 0.35
             },
             {
-                'class_name': 'Bicycle',
+                'class_name': 'Cyclist',
                 'anchor_sizes': [[1.8, 0.8, 1.6]],
                 'anchor_rotations': [0, 1.57],
                 'anchor_bottom_heights': [-0.6],

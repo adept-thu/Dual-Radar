@@ -28,7 +28,7 @@ def get_thresholds(scores: np.ndarray, num_gt, num_sample_pts=41):
 
 
 def clean_data(gt_anno, dt_anno, current_class, difficulty):
-    CLASS_NAMES = ['car', 'pedestrian', 'bicycle', 'motorcycle', 'bus', 'truck']
+    CLASS_NAMES = ['car', 'pedestrian', 'cyclist', 'motorcycle', 'bus', 'truck']
     #fangchange
     MIN_HEIGHT = [40, 25, 20]
     MAX_OCCLUSION = [0, 1, 2]
@@ -661,7 +661,7 @@ def get_official_eval_result(gt_annos, dt_annos, current_classes, PR_detail_dict
     class_to_name = {
         0: 'Car',
         1: 'Pedestrian',
-        2: 'Bicycle',
+        2: 'Cyclist',
         3: 'Motorcycle',
         4: 'Bus',
         5: 'Truck'

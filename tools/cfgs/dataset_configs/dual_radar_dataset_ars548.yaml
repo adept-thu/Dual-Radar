@@ -26,11 +26,11 @@ DATA_AUGMENTOR:
           DB_INFO_PATH:
               - dual_radar_dbinfos_train.pkl
           PREPARE: {
-             filter_by_min_points: ['Car:0', 'Pedestrian:0', 'Bicycle:0'],
+             filter_by_min_points: ['Car:0', 'Pedestrian:0', 'Cyclist:0'],
              filter_by_difficulty: [-1],
           }
 
-          SAMPLE_GROUPS: ['Car:20','Pedestrian:15', 'Bicycle:15']
+          SAMPLE_GROUPS: ['Car:20','Pedestrian:15', 'Cyclist:15']
           #修改 这里特征数为5
           NUM_POINT_FEATURES: 5
           DATABASE_WITH_FAKELIDAR: False

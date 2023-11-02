@@ -1,4 +1,4 @@
-CLASS_NAMES: ['Car', 'Pedestrian', 'Bicycle']
+CLASS_NAMES: ['Car', 'Pedestrian', 'Cyclist']
 # CLASS_NAMES: ['Car']
 
 DATA_CONFIG: 
@@ -57,7 +57,7 @@ MODEL:
                 'unmatched_threshold': 0.35
             },
             {
-                'class_name': 'Bicycle',
+                'class_name': 'Cyclist',
                 'anchor_sizes': [[1.8, 0.8, 1.6]],
                 'anchor_rotations': [0, 1.57],
                 'anchor_bottom_heights': [-0.6],

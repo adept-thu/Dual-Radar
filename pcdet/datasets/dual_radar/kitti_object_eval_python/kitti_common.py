@@ -14,7 +14,7 @@ def get_image_index_str(img_idx):
 
 def get_kitti_info_path(idx,
                         prefix,
-                        info_type='image_2',
+                        info_type='image',
                         file_tail='.png',
                         training=True,
                         relative_path=True):
@@ -34,12 +34,12 @@ def get_kitti_info_path(idx,
 
 
 def get_image_path(idx, prefix, training=True, relative_path=True):
-    return get_kitti_info_path(idx, prefix, 'image_2', '.png', training,
+    return get_kitti_info_path(idx, prefix, 'image', '.png', training,
                                relative_path)
 
 
 def get_label_path(idx, prefix, training=True, relative_path=True):
-    return get_kitti_info_path(idx, prefix, 'label_2', '.txt', training,
+    return get_kitti_info_path(idx, prefix, 'label', '.txt', training,
                                relative_path)
 
 

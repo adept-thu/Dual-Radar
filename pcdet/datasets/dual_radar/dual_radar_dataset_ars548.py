@@ -73,12 +73,12 @@ class DualradarDataset_ARS548(DatasetTemplate):
         return points_ars548
 
     def get_image_shape(self, idx):
-        img_file = self.root_split_path / 'image_2' / ('%s.png' % idx)
+        img_file = self.root_split_path / 'image' / ('%s.png' % idx)
         assert img_file.exists()
         return np.array(io.imread(img_file).shape[:2], dtype=np.int32)
 
     def get_label(self, idx):
-        label_file = self.root_split_path / 'label_2' / ('%s.txt' % idx)
+        label_file = self.root_split_path / 'label' / ('%s.txt' % idx)
         assert label_file.exists()
         return object3d_dual_radar.get_objects_from_label(label_file)
 
@@ -502,7 +502,7 @@ if __name__ == '__main__':
         ROOT_DIR = (Path(__file__).resolve().parent / '../../../').resolve()
         create_kitti_infos(
             dataset_cfg=dataset_cfg,
-            class_names=['Car', 'Pedestrian', 'Bicycle'],
+            class_names=['Car', 'Pedestrian', 'Cyclist'],
             # fangchange
             data_path=ROOT_DIR / 'data' / 'dual_radar' / 'radar_ars548',
             save_path=ROOT_DIR / 'data' / 'dual_radar' / 'radar_ars548'

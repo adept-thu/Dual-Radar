@@ -57,6 +57,8 @@ pcdet/models/__init__.py
 pcdet/models/backbones_2d/__init__.py
 pcdet/models/backbones_2d/base_bec_backbone_kradar.py
 pcdet/models/backbones_2d/base_bev_backbone.py
+pcdet/models/backbones_2d/ct_bev_backbone.py
+pcdet/models/backbones_2d/ct_bev_backbone_3cat.py
 pcdet/models/backbones_2d/map_to_bev/__init__.py
 pcdet/models/backbones_2d/map_to_bev/conv2d_collapse.py
 pcdet/models/backbones_2d/map_to_bev/height_compression.py
@@ -67,6 +69,7 @@ pcdet/models/backbones_3d/IASSD_backbone.py
 pcdet/models/backbones_3d/__init__.py
 pcdet/models/backbones_3d/pointnet2_backbone.py
 pcdet/models/backbones_3d/spconv_backbone.py
+pcdet/models/backbones_3d/spconv_backbone_casa.py
 pcdet/models/backbones_3d/spconv_backbone_focal.py
 pcdet/models/backbones_3d/spconv_backbone_kradar.py
 pcdet/models/backbones_3d/spconv_unet.py
@@ -105,6 +108,8 @@ pcdet/models/backbones_3d/vfe/image_vfe_modules/ffn/ddn_loss/ddn_loss.py
 pcdet/models/dense_heads/IASSD_head.py
 pcdet/models/dense_heads/__init__.py
 pcdet/models/dense_heads/anchor_head_multi.py
+pcdet/models/dense_heads/anchor_head_rdiou.py
+pcdet/models/dense_heads/anchor_head_rdiou_3cat.py
 pcdet/models/dense_heads/anchor_head_single.py
 pcdet/models/dense_heads/anchor_head_template.py
 pcdet/models/dense_heads/center_head.py
@@ -117,7 +122,10 @@ pcdet/models/dense_heads/target_assigner/__init__.py
 pcdet/models/dense_heads/target_assigner/anchor_generator.py
 pcdet/models/dense_heads/target_assigner/atss_target_assigner.py
 pcdet/models/dense_heads/target_assigner/axis_aligned_target_assigner.py
+pcdet/models/dense_heads/target_assigner/axis_aligned_target_assigner_add_gt.py
 pcdet/models/detectors/3DSSD.py
+pcdet/models/detectors/CT3D.py
+pcdet/models/detectors/CT3D_3CAT.py
 pcdet/models/detectors/IASSD.py
 pcdet/models/detectors/PartA2_net.py
 pcdet/models/detectors/__init__.py
@@ -130,6 +138,7 @@ pcdet/models/detectors/point_rcnn.py
 pcdet/models/detectors/pointpillar.py
 pcdet/models/detectors/pv_rcnn.py
 pcdet/models/detectors/pv_rcnn_plusplus.py
+pcdet/models/detectors/rdiou_net.py
 pcdet/models/detectors/rpfa.py
 pcdet/models/detectors/second_net.py
 pcdet/models/detectors/second_net_iou.py
@@ -138,10 +147,15 @@ pcdet/models/model_utils/__init__.py
 pcdet/models/model_utils/attention_utils.py
 pcdet/models/model_utils/basic_block_2d.py
 pcdet/models/model_utils/centernet_utils.py
+pcdet/models/model_utils/ctrans.py
 pcdet/models/model_utils/model_nms_utils.py
 pcdet/models/model_utils/pspnet.py
 pcdet/models/model_utils/resnet_utils.py
 pcdet/models/roi_heads/__init__.py
+pcdet/models/roi_heads/casa_pv_head.py
+pcdet/models/roi_heads/casa_t_head.py
+pcdet/models/roi_heads/casa_v_head.py
+pcdet/models/roi_heads/cascade_roi_head_template.py
 pcdet/models/roi_heads/partA2_head.py
 pcdet/models/roi_heads/pdv_head.py
 pcdet/models/roi_heads/pointrcnn_head.py
@@ -198,6 +212,7 @@ pcdet/ops/roipoint_pool3d/roipoint_pool3d_utils.py
 pcdet/ops/roipoint_pool3d/src/roipoint_pool3d.cpp
 pcdet/ops/roipoint_pool3d/src/roipoint_pool3d_kernel.cu
 pcdet/utils/__init__.py
+pcdet/utils/bbloss.py
 pcdet/utils/box_coder_utils.py
 pcdet/utils/box_utils.py
 pcdet/utils/calibration_data.py
@@ -211,6 +226,7 @@ pcdet/utils/loss_utils.py
 pcdet/utils/object3d_data.py
 pcdet/utils/object3d_dual_radar.py
 pcdet/utils/object3d_kitti.py
+pcdet/utils/odiou_loss.py
 pcdet/utils/spconv_utils.py
 pcdet/utils/transform_utils.py
 pcdet/utils/voxel_aggregation_utils.py
