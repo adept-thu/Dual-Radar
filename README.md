@@ -6,7 +6,7 @@
 <p align="center"><font face="Helvetica" size=20.><b>Paper: (https://arxiv.org/pdf/2310.07602.pdf)</b></font></p>
 
 # News
-<strong>[2023.10.29]  We have released the dataset download [link]((#downloadlink)). </strong> 
+<strong>[2023.10.29]  We have released the dataset download [link](#downloadlink). </strong> 
 
 [2023.10.27] Our Code currently supports some baselines including Voxel RCNN, Second, Pointpillars, RDIOU. Other baselines will be updated soon.
 
