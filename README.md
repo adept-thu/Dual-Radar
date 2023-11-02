@@ -2,7 +2,7 @@
   <img src = "./imgs/logo.png" width="60%">
 </p>
 
-<p align="center"><font face="Helvetica" size=4.><b>Paper: (https://arxiv.org/pdf/2310.07602.pdf)</b></font></p>
+<p align="center"><font face="Helvetica" size=6.><b>Paper: (https://arxiv.org/pdf/2310.07602.pdf)</b></font></p>
 
 # News
 <strong>[2023.10.29]  We have released the dataset download link. </strong> 
