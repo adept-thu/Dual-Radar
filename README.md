@@ -3,7 +3,7 @@
 </p>
 
 # News
-<strong>[2023.10.29] We have made the dataset download links publicly available.</strong>
+<strong>[2023.10.29]  We have released the dataset download link.</strong>
 
 [2023.10.27] Our Code currently supports some baselines including Voxel RCNN, Second, Pointpillars, RDIOU. Other baselines will be updated soon.
 
