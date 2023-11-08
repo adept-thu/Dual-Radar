@@ -191,7 +191,8 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 
 <a id="downloadlink"></a>
 # 3. Download Link
-* Our dataset is freely available to researchers. Please download and sign our [agreement](https://docs.google.com/document/d/1ZZ_Y_BujAx24jG64u6OyAKtupmZ1QTWN/edit?usp=sharing&ouid=113489683910089362811&rtpof=true&sd=true) and send it to the provided email address (<b>lwang_hit@hotmail.com</b>). You will receive the download link within one week.
+* Our dataset is freely available to researchers. Please download and sign our [agreement](https://docs.google.com/document/d/1ZZ_Y_BujAx24jG64u6OyAKtupmZ1QTWN/edit?usp=sharing&ouid=113489683910089362811&rtpof=true&sd=true
+) and send it to the provided email address (<b>lwang_hit@hotmail.com</b>). You will receive the download link within one week.
 
 * When unzipping the data, please file and organize it by following the format below:
 ```
