@@ -355,8 +355,8 @@ class DualradarDataset_ARBE(DatasetTemplate):
                 return dets
             valid_idx = (np.abs(dets['location'][:, 2]) > d_range[0]) * \
                 (np.abs(dets['location'][:, 2]) <= d_range[1]) * \
-                (np.abs(dets['location'][:, 0]) > -4) * \
-                (np.abs(dets['location'][:, 0]) < 4)
+                (np.abs(dets['location'][:, 0]) > -40) * \
+                (np.abs(dets['location'][:, 0]) < 40)
 
             # 把DontCare的位置改回True
             for i in range(len(dets['name'])):
