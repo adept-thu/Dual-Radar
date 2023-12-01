@@ -292,7 +292,7 @@ Our ego vehicle’s configuration and the coordinate relationships between multi
 
 * Location mean the xyz in label coordinate. The same coordinate origen and the relation of axis is shown below.
 <p align="center">
-  <img src = "./imgs/coordinate1.png">
+  <img src = "./imgs/coordinate.png">
 </p>
 <p align="center"><font face="Helvetica" size=3.><b>Figure 5. Illustration of sensor coordinate systems</b></font></p>
 
