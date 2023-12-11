@@ -157,6 +157,7 @@ class DatasetTemplate(torch_data.Dataset):
             return self.__getitem__(new_index)
 
         data_dict.pop('gt_names', None)
+        print(data_dict['points'])
 
         return data_dict
 

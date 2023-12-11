@@ -29,9 +29,9 @@ class DualradarDataset_ARS548(DatasetTemplate):
         self.sample_id_list = [x.strip() for x in open(split_dir).readlines()] if split_dir.exists() else None
 
         self.kitti_infos = []
-        self.include_kitti_data(self.mode)
+        self.include_dual_radar_data(self.mode)
 
-    def include_kitti_data(self, mode):
+    def include_dual_radar_data(self, mode):
         if self.logger is not None:
             self.logger.info('Loading Dual radar dataset')
         kitti_infos = []

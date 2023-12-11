@@ -131,7 +131,7 @@ class DualradarDataset_ARBE(DatasetTemplate):
         def process_single_scene(sample_idx):
             print('%s sample_idx: %s' % (self.split, sample_idx))
             info = {}
-            #修改5  将特征数4 改成6
+            #修改5  将特征数4 改成5
             pc_info = {'num_features': 5, 'arbe_idx': sample_idx}
             info['point_cloud'] = pc_info
 

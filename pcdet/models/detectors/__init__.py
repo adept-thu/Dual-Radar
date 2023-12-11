@@ -16,6 +16,7 @@ from .point_3dssd import Point3DSSD
 from .rdiou_net import RDIoUNet
 from .CT3D import CT3D
 from .CT3D_3CAT import CT3D_3CAT
+from .voxel_rcnn_fusion import VoxelRCNNFusion
 
 __all__ = {
     'Detector3DTemplate': Detector3DTemplate,
@@ -35,7 +36,8 @@ __all__ = {
     'BiProDet': Point3DSSD,
     'RDIoUNet': RDIoUNet,
     'CT3D': CT3D,
-    'CT3D_3CAT': CT3D_3CAT
+    'CT3D_3CAT': CT3D_3CAT,
+    'VoxelRCNNFusion': VoxelRCNNFusion
 }
 
 

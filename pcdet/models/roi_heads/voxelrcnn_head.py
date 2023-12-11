@@ -13,7 +13,7 @@ class VoxelRCNNHead(RoIHeadTemplate):
         LAYER_cfg = self.pool_cfg.POOL_LAYERS
         self.point_cloud_range = point_cloud_range
         self.voxel_size = voxel_size
-
+        #import pdb;pdb.set_trace()
         c_out = 0
         self.roi_grid_pool_layers = nn.ModuleList()
         for src_name in self.pool_cfg.FEATURES_SOURCE:

@@ -10,6 +10,7 @@ from .rpfa_maxpool_vfe import RpfaMaxpoolVFE
 from .rpfa_avgpool_vfe import RpfaAvgpoolVFE
 from .vod_rpfa_vfe import VodRpfaVFE
 from .pfa_vfe import pfaVFE
+from .image_point_vfe import ImagePointVFE
 
 __all__ = {
     'VFETemplate': VFETemplate,
@@ -23,5 +24,6 @@ __all__ = {
     'RpfaVFE': RpfaVFE,
     'RpfaMaxpoolVFE': RpfaMaxpoolVFE,
     'RpfaAvgpoolVFE': RpfaAvgpoolVFE,
-    'pfaVFE': pfaVFE
+    'pfaVFE': pfaVFE,
+    'ImagePointVFE': ImagePointVFE
 }
