@@ -7,6 +7,7 @@
 
 # News
 <strong>[2023.10.29]  We have released the dataset download [link](#downloadlink). </strong> 
+
 [2023.12.10] Our Code currently supports VFF and M2Fusion.
 
 [2023.10.27] Our Code currently supports some baselines including Voxel RCNN, Second, Pointpillars, RDIOU. Other baselines will be updated soon.
