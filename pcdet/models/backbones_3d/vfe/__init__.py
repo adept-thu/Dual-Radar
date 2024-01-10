@@ -11,6 +11,7 @@ from .rpfa_avgpool_vfe import RpfaAvgpoolVFE
 from .vod_rpfa_vfe import VodRpfaVFE
 from .pfa_vfe import pfaVFE
 from .image_point_vfe import ImagePointVFE
+from .M2Fusion_vfe import M2PillarVFE
 
 __all__ = {
     'VFETemplate': VFETemplate,
@@ -25,5 +26,6 @@ __all__ = {
     'RpfaMaxpoolVFE': RpfaMaxpoolVFE,
     'RpfaAvgpoolVFE': RpfaAvgpoolVFE,
     'pfaVFE': pfaVFE,
-    'ImagePointVFE': ImagePointVFE
+    'ImagePointVFE': ImagePointVFE,
+    'M2PillarVFE': M2PillarVFE,
 }
