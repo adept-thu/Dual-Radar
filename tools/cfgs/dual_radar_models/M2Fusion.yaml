@@ -62,7 +62,7 @@ MODEL:
     NAME: PointPillar
 
     VFE:
-        NAME: PillarVFE
+        NAME: M2PillarVFE
         WITH_DISTANCE: False
         USE_ABSLOTE_XYZ: True
         USE_NORM: True
