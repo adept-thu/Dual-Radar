@@ -6,7 +6,7 @@
 <p align="center"><font face="Helvetica" size=20.><b>Paper: (https://arxiv.org/pdf/2310.07602.pdf)</b></font></p>
 
 # News
-<strong>[2023.10.29]  We are very sorry for the damage to some files in the published data, and the partitioning issue of imagesets has been corrected. </strong> 
+<strong>[2023.1.15]  We are very sorry for the damage to some files in the published data, and the partitioning issue of imagesets has been corrected. And you can replace these images in the original dataset. </strong> 
 
 <strong>[2023.10.29]  We have released the dataset download [link](#downloadlink). </strong> 
 
